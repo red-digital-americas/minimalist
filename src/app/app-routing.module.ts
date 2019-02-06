@@ -7,6 +7,12 @@ import { DataMailingComponent } from './components/pages/servicios/data-mailing/
 import { DesarrolloComponent } from './components/pages/servicios/desarrollo/desarrollo.component';
 import { PublicidadDigitalComponent } from './components/pages/servicios/publicidad-digital/publicidad-digital.component';
 import { SocialMediaComponent } from './components/pages/servicios/social-media/social-media.component';
+import { AboutUsComponent } from './components/pages/about-us/about-us.component';
+import { BlogComponent } from './components/pages/blog/blog.component';
+import { CasosDeExitoComponent } from './components/pages/casos-de-exito/casos-de-exito.component';
+import { CertificacionesComponent } from './components/pages/certificaciones/certificaciones.component';
+import { ContactoComponent } from './components/pages/contacto/contacto.component';
+import { EquipoComponent } from './components/pages/equipo/equipo.component';
 
 const routes: Routes = [
   {
@@ -37,6 +43,36 @@ const routes: Routes = [
       {
         path: 'servicios/social-media',
         component: SocialMediaComponent
+      },
+
+      {
+        path: 'about-us',
+        component: AboutUsComponent
+      },
+
+      {
+        path: 'blog',
+        component: BlogComponent
+      },
+
+      {
+        path: 'casos-de-exito',
+        component: CasosDeExitoComponent
+      },
+
+      {
+        path: 'certificaciones',
+        component: CertificacionesComponent
+      },
+
+      {
+        path: 'contacto',
+        component: ContactoComponent
+      },
+
+      {
+        path: 'equipo',
+        component: EquipoComponent
       }
 ];
 
