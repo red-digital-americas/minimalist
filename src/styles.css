@@ -1,5 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/*You can add global styles to this file, and also import other style files*/
 @import './assets/css/style.css';
+@import '/assets/css/royal_preloader.css';
+@import '/assets/css/base-light.css';
+@import '/assets/css/bootstrap.min.css';
+@import '/assets/css/Ionicons.min.css';
+@import '/assets/css/logoiconfont.css';
+
+@font-face{
+font-family:"Ionicons";
+src:url("assets/fonts/ionicons.eot?v=2.0.0");
+src:url("assets/fonts/ionicons.eot?v=2.0.0#iefix")format("embedded-opentype"),
+url("assets/fonts/ionicons.ttf?v=2.0.0")format("truetype"),
+url("assets/fonts/ionicons.woff?v=2.0.0")format("woff"),
+url("assets/fonts/ionicons.svg?v=2.0.0#Ionicons")format("svg");}
+
+body {
+    color: #cccccc !important;
+    text-align: justify !important;
+    background-color: #0f0f0f !important;
 
 @font-face {
 font-family: "fontOne";
@@ -11,6 +29,3 @@ font-family: "fontTwo";
 src: url("./assets/fonts/BebasFont/BebasNeueLight.ttf");
 }
 
-body {
-  background:black !important;
-}
