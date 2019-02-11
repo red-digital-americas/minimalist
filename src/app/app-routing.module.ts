@@ -13,7 +13,7 @@ import { CasosDeExitoComponent } from './components/pages/casos-de-exito/casos-d
 import { CertificacionesComponent } from './components/pages/certificaciones/certificaciones.component';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
 import { EquipoComponent } from './components/pages/equipo/equipo.component';
-
+import { TaylorMadeComponent } from './components/pages/casos-de-exito/taylor-made/taylor-made.component';
 const routes: Routes = [
   {
      path: '',
@@ -73,6 +73,10 @@ const routes: Routes = [
       {
         path: 'equipo',
         component: EquipoComponent
+      },
+      {
+        path: 'casos-de-exito/taylor-made',
+        component: TaylorMadeComponent
       }
 ];
 

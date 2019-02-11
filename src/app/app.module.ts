@@ -17,6 +17,7 @@ import { EquipoComponent } from './components/pages/equipo/equipo.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { CertificacionesComponent } from './components/pages/certificaciones/certificaciones.component';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
+import { TaylorMadeComponent } from './components/pages/casos-de-exito/taylor-made/taylor-made.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
     EquipoComponent,
     AboutUsComponent,
     CertificacionesComponent,
-    ContactoComponent
+    ContactoComponent,
+    TaylorMadeComponent
   ],
   imports: [
     BrowserModule,
