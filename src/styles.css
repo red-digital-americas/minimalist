@@ -1,10 +1,10 @@
 /*You can add global styles to this file, and also import other style files*/
-@@import"/assets/css/colors/style.css";
-@@import"/assets/css/colors/royal_preloader.css";
-@@import"/assets/css/colors/base-light.css";
-@@import"/assets/css/colors/bootstrap.min.css";
-@@import"/assets/css/colors/Ionicons.min.css";
-@@import"/assets/css/colors/logoiconfont.css";
+@import './assets/css/style.css';
+@import '/assets/css/royal_preloader.css';
+@import '/assets/css/base-light.css';
+@import '/assets/css/bootstrap.min.css';
+@import '/assets/css/Ionicons.min.css';
+@import '/assets/css/logoiconfont.css';
 
 @font-face{
 font-family:"Ionicons";
@@ -18,4 +18,14 @@ body {
     color: #cccccc !important;
     text-align: justify !important;
     background-color: #0f0f0f !important;
+
+@font-face {
+font-family: "fontOne";
+src: url("./assets/fonts/FUTURAPTMEDIUM.OTF");
 }
+
+@font-face {
+font-family: "fontTwo";
+src: url("./assets/fonts/BebasFont/BebasNeueLight.ttf");
+}
+

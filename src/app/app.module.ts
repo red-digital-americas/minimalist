@@ -15,6 +15,18 @@ import { NuevosClientesComponent } from './components/home/nuevos-clientes/nuevo
 import { FidelizarClientesComponent } from './components/home/fidelizar-clientes/fidelizar-clientes.component';
 import { GridClientesComponent } from './components/home/grid-clientes/grid-clientes.component';
 import { GridBlogComponent } from './components/home/grid-blog/grid-blog.component';
+import { ServiciosComponent } from './components/pages/servicios/servicios.component';
+import { PublicidadDigitalComponent } from './components/pages/servicios/publicidad-digital/publicidad-digital.component';
+import { DesarrolloComponent } from './components/pages/servicios/desarrollo/desarrollo.component';
+import { SocialMediaComponent } from './components/pages/servicios/social-media/social-media.component';
+import { DataMailingComponent } from './components/pages/servicios/data-mailing/data-mailing.component';
+import { CasosDeExitoComponent } from './components/pages/casos-de-exito/casos-de-exito.component';
+import { BlogComponent } from './components/pages/blog/blog.component';
+import { EquipoComponent } from './components/pages/equipo/equipo.component';
+import { AboutUsComponent } from './components/pages/about-us/about-us.component';
+import { CertificacionesComponent } from './components/pages/certificaciones/certificaciones.component';
+import { ContactoComponent } from './components/pages/contacto/contacto.component';
+import { TaylorMadeComponent } from './components/pages/casos-de-exito/taylor-made/taylor-made.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +42,19 @@ import { GridBlogComponent } from './components/home/grid-blog/grid-blog.compone
     NuevosClientesComponent,
     FidelizarClientesComponent,
     GridClientesComponent,
-    GridBlogComponent
+    GridBlogComponent,
+    ServiciosComponent,
+    PublicidadDigitalComponent,
+    DesarrolloComponent,
+    SocialMediaComponent,
+    DataMailingComponent,
+    CasosDeExitoComponent,
+    BlogComponent,
+    EquipoComponent,
+    AboutUsComponent,
+    CertificacionesComponent,
+    ContactoComponent,
+    TaylorMadeComponent
   ],
   imports: [
     BrowserModule,

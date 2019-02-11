@@ -1,0 +1,81 @@
+.textOne {
+  font-size: 24px;
+  color: #808080;
+  padding-left: 40px;
+  font-family: fontOne;
+}
+
+/* animation LineOne */
+.lineOne{
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+/* end animation LineOne */
+
+/* animation LineTwo */
+.lineTwo{
+  animation-duration: 2s;
+  animation-name: slideinTwo;
+}
+
+@keyframes slideinTwo {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+/* end animation LineTwo */
+
+/* animation LineThree */
+.lineThree {
+  animation-duration: 2s;
+  animation-name: slideinThree;
+}
+
+@keyframes slideinThree {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+/* end animation LineThree */
+
+/* animation LineFour */
+.lineFour {
+  animation-duration: 3s;
+  animation-name: slideinFour;
+}
+
+@keyframes slideinFour {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  0%, 100% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* end animation LineThree */
