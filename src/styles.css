@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/css/style.css';
+
+@font-face {
+font-family: "fontOne";
+src: url("./assets/fonts/FUTURAPTMEDIUM.OTF");
+}
+
+@font-face {
+font-family: "fontTwo";
+src: url("./assets/fonts/BebasFont/BebasNeueLight.ttf");
+}
+
+body {
+  background:black !important;
+}
