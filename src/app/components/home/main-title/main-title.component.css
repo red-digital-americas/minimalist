@@ -16,6 +16,8 @@
   margin-right: auto;
   width: 45%;
   padding: 3%;
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
 }
 .desc{
   text-align: justify;
@@ -23,15 +25,25 @@
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 3%;
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
 }
 .arrow{
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
   position: inherit;
   right:auto;
   display: table;
   font-size: 70px;
   color: #333333;
+}
+.arrow:hover{
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-delay: 0.25s;
+  color: #ffffff;
 }
 #particles-js {
   z-index: -1;
@@ -47,4 +59,8 @@
 	background: -webkit-linear-gradient(left, #222222 0%, #121212 35%, #141414 68%, #333333 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, #222222 0%, #121212 35%, #141414 68%, #333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6819e8', endColorstr='#6980f2',GradientType=1 ); /* IE6-9 */
+}
+
+.particles-js-canvas-el{
+  z-index: -2;
 }
