@@ -1,0 +1,53 @@
+.carousel{
+  background: #1f1f1f; /* Old browsers
+  /* background: -moz-linear-gradient(45deg, #141414 0%, #2b2b2b 100%); /* FF3.6-15
+  background: -webkit-linear-gradient(45deg, #141414 0%,#2b2b2b 100%); /* Chrome10-25,Safari5.1-6
+  background: linear-gradient(45deg, #141414 0%,#2b2b2b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#2b2b2b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.arrow{
+  position: inherit;
+  display: table;
+  font-size: 70px;
+  color: #333333;
+}
+.img-cert{
+  background: #000000;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+@supports(object-fit: cover){
+    .img-cert{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+/*
+.carousel-indicators{
+  display: none;
+}
+.carousel-item {
+    position: relative;
+    display: -webkit-inline-box;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  }*/
+
+  .MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:0px; background:none; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }

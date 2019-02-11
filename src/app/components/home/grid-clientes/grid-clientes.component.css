@@ -1,0 +1,113 @@
+.grid-clientes{
+  background: #141414; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #141414 0%, #2b2b2b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #141414 0%,#2b2b2b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #141414 0%,#2b2b2b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#2b2b2b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.title{
+  color: #ffffff;
+  align-items: center;
+  position: inherit;
+  right:auto;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: lighter;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-margin{
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.gradient{
+  animation: line 1.65s linear forwards;
+  position: inherit;
+  width: 45%;
+  height: 0.01em;
+  /*background-image: url("");*/
+  background-color: #0ab8ce; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #0ab8ce, #02fd9c); /* Standard syntax (must be last) */
+}
+
+@keyframes line {
+  from {
+    left:45%;
+    width:0%;
+  }
+  to {
+    left:5%;
+    width:40%;
+  }
+}
+
+.img-cliente{
+  background: #000000;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+@supports(object-fit: cover){
+    .img-cliente{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.box-cliente{
+  background-color: #000000;
+}
+.box-cliente:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  width: 90%;
+  transition: 0.7s ease;
+  background-color: #ffffff;
+  -webkit-transform: translate(0,-100%);
+}
+.img-cliente-hover{
+  width: 100%;
+  height: auto;
+}
+@supports(object-fit: cover){
+    .img-cliente-hover{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.div-boton{
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+.boton{
+	background: none;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:1px solid #02fd9d;
+	display:inline-block;
+	cursor:pointer;
+	color:#02fd9d;
+	padding:12px 46px;
+	text-decoration:none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.boton:hover {
+  border:1px solid #0ab8ce;
+	display:inline-block;
+	cursor:pointer;
+	color:#0ab8ce;
+	padding:12px 46px;
+	text-decoration:none;
+  transition: 0.7s ease;
+}
