@@ -64,7 +64,7 @@ Author:Denis Samardjiev
 -------------------------------------------------------------- */
 body {
 	background-color: #1d1d1d;
-	font-family: 'Roboto', sans-serif;
+	font-family: "font-four" , sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 
@@ -83,7 +83,7 @@ a:active, a:focus {
 }
 
 a {
-    color: #65C6BB;
+    text-decoration: none;
     outline: none;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -320,7 +320,7 @@ ul.list-arrow-color li:before {
 }
 
 .section-title h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "font-one", sans-serif;
     font-size: 38px;
     font-weight: 400;
     color: #fff;
@@ -346,7 +346,7 @@ ul.list-arrow-color li:before {
 }
 
 .heading-1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "font-one", sans-serif;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
@@ -357,7 +357,7 @@ ul.list-arrow-color li:before {
 }
 
 .heading-2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "font-one", sans-serif;
     color: #fff;
     font-weight: 700;
     text-transform: lowercase;
@@ -368,7 +368,7 @@ ul.list-arrow-color li:before {
 }
 
 .heading-3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "font-one", sans-serif;
     color: #fff;
     font-size: 12px;
     font-weight: 700;
@@ -409,7 +409,7 @@ ul.list-arrow-color li:before {
 }
 
 .breadcrumb-holder h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "font-one", sans-serif;
     color: #fff;
     font-size: 12px;
     margin-top: 4px;
@@ -430,7 +430,7 @@ ul.list-arrow-color li:before {
 .btn {
 	border-radius: 45px;
     margin-bottom: 1px;
-	font-family: 'Montserrat', sans-serif;
+font-family: "font-one", sans-serif;
 	text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
@@ -750,7 +750,7 @@ ul.social-buttons li a:active {
 .tab-pane::first-letter {
     font-size: 120%;
     color: #fff;
-    font-family: "Montserrat",sans-serif;
+    font-family: "font-one", sans-serif;
     font-weight: 700;
 }
 
@@ -974,7 +974,7 @@ ul.social-buttons li a:active {
 }
 
 .navbar-default {
-	font-family: "Montserrat",sans-serif;
+	font-family: "font-one", sans-serif;
 	font-size: 12px;
 	background: rgb(47, 47, 47) none repeat scroll 0% 0%;
 	text-transform: uppercase;
@@ -1065,7 +1065,7 @@ ul.social-buttons li a:active {
 .jumbotron.jumbotron-main {
 	height: 100%;
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: "font-four", sans-serif;
 	color: #fff;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -1139,7 +1139,7 @@ ul.social-buttons li a:active {
 .jumbotron.jumbotron-register {
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "font-four", sans-serif;
     color: #fff;
     padding-top: 0;
     padding-bottom: 0;
@@ -1169,7 +1169,7 @@ ul.social-buttons li a:active {
 /* =Hello Intro
 -------------------------------------------------------------- */
 #hello-intro h2 {
-	font-family: 'Montserrat', sans-serif;
+font-family: "font-one", sans-serif;
 	font-weight: 700;
 	font-size: 42px;
 	color: #fff;
@@ -1180,7 +1180,7 @@ ul.social-buttons li a:active {
 }
 
 #hello-intro h3 {
-	font-family: 'Roboto', sans-serif;
+	font-family: "font-four", sans-serif;
 	font-weight: 100;
 	font-size: 25px;
 	color: #b0b0b0;
@@ -1198,7 +1198,7 @@ ul.social-buttons li a:active {
 }
 
 #our-process-title h4 {
-	font-family: 'Montserrat', sans-serif;
+font-family: "font-one", sans-serif;
 	color: #fff;
 	font-size: 12px;
 	font-weight: 700;
@@ -1243,7 +1243,7 @@ ul.social-buttons li a:active {
 }
 
 #our-process .process-number {
-	font-family: 'Montserrat', sans-serif;
+font-family: "font-one", sans-serif;
 	font-weight: 700;
 	font-size: 36px;
 	color: #fff;
@@ -1348,6 +1348,7 @@ ul.social-buttons li a:active {
 }
 
 .service-name {
+    font-family: "font-one", sans-serif;
     margin-bottom: 15px;
     margin-top: 15px;
 		text-transform: uppercase;
@@ -1367,7 +1368,7 @@ ul.social-buttons li a:active {
 
 .service-title {
     color: #fff;
-    font-family: "Montserrat",sans-serif;
+    font-family: "font-one", sans-serif;
     font-size: 28px;
     margin-top: 13px;
 }
@@ -1667,7 +1668,7 @@ span.portfolio-hover a {
 
 .badge {
     position: absolute;
-	font-family: 'Montserrat', sans-serif;
+font-family: "font-one", sans-serif;
     background-color: transparent;
     font-size: 14px;
     z-index: 1;
@@ -1720,7 +1721,7 @@ span.portfolio-hover a {
 }
 
 .plan li.plan-name {
-	font-family: 'Roboto', sans-serif;
+	font-family: "font-four", sans-serif;
 	font-weight: 100;
 	padding: 15px;
 	font-size: 24px;
@@ -1962,7 +1963,7 @@ span.portfolio-hover a {
 /* =Footer
 -------------------------------------------------------------- */
 .theme-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "font-one", sans-serif;
     color: #fff;
     font-size: 24px;
     text-transform: uppercase;
