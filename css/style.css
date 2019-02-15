@@ -40,6 +40,26 @@ Author:Denis Samardjiev
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300,100|Montserrat:400,700);
 
+@font-face {
+  font-family: "font-one";
+  src: url("../fonts/BebasFont/BebasNeueLight.ttf");
+}
+
+@font-face {
+  font-family: "font-two";
+  src: url("../fonts/FuturaPTBold.otf");
+}
+
+@font-face {
+  font-family: "font-three";
+  src: url("../fonts/FuturaPTBook.otf");
+}
+
+@font-face {
+  font-family: "font-four";
+  src: url("../fonts/FuturaPTLight.otf");
+}
+
 /* =Common Styles
 -------------------------------------------------------------- */
 body {
@@ -51,6 +71,7 @@ body {
 	color: #A2A2A2;
 	height: 100%;
 	min-height: 100% !important;
+	text-align: center;
 }
 
 html {
@@ -107,22 +128,24 @@ span.divider.center {
     margin-left: auto;
 }
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
 button:hover,
 #contact .form-control:focus,
-#contact .form-control:hover, 
-#contact .form-control:active { 
+#contact .form-control:hover,
+#contact .form-control:active {
 	box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-    border-color: #8980fe;
+  /*
+    border-color: red;
+    */
 }
 
 .ticker {
@@ -676,7 +699,7 @@ ul.social-buttons li a:active {
     border-top:none;
 }
 
-.tab-pane::first-letter { 
+.tab-pane::first-letter {
     font-size: 120%;
     color: #fff;
     font-family: "Montserrat",sans-serif;
@@ -991,7 +1014,7 @@ ul.social-buttons li a:active {
 
 /* =Jumbotron Main
 -------------------------------------------------------------- */
-.jumbotron.jumbotron-main { 
+.jumbotron.jumbotron-main {
 	height: 100%;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
@@ -1043,7 +1066,7 @@ ul.social-buttons li a:active {
     height: 100%;
 }
 
-.center-vertically-holder { 
+.center-vertically-holder {
 	display: table;
 	height: 100%;
 }
@@ -1091,8 +1114,8 @@ ul.social-buttons li a:active {
     color: #414141;
 }
 
-.jumbotron.jumbotron-register h1 { 
-    font-size:59px; 
+.jumbotron.jumbotron-register h1 {
+    font-size:59px;
 }
 
 /* =Hello Intro
@@ -1160,7 +1183,7 @@ ul.social-buttons li a:active {
 	border-right: 1px solid #2d2d2d;
 	min-height: 400px;
     background-repeat: no-repeat;
-    background-position: center bottom; 
+    background-position: center bottom;
 }
 
 #our-process .process-box:hover {
@@ -1216,7 +1239,7 @@ ul.social-buttons li a:active {
 .carousel-control.right { background-image:none; }
 .carousel-control.left { background-image:none; }
 
-.carousel-control .carousel-arrow-left, 
+.carousel-control .carousel-arrow-left,
 .carousel-control .carousel-arrow-right {
   position:absolute;
   top:50%;
@@ -1271,7 +1294,7 @@ ul.social-buttons li a:active {
 
 /* =Services
 -------------------------------------------------------------- */
-.services-icon { 
+.services-icon {
     font-size: 40px;
     color: #8980fe;
 }
@@ -1447,7 +1470,7 @@ ul.social-buttons li a:active {
 	-moz-transition: opacity 500ms;
 	-o-transition: opacity 500ms;
 	transition: opacity 500ms;
-	background-color: rgba(137, 128, 254, 0.80); 
+	background-color: rgba(137, 128, 254, 0.80);
 }
 
 .team-image-wrapper .team-image-hover .team-hover-content {
@@ -1843,7 +1866,9 @@ span.portfolio-hover a {
     font-size: 14px;
     font-weight: 400;
     border: none;
+    /*
     border-bottom: 2px solid #292929;
+    */
     border-radius: 0px;
     box-shadow: none !important;
     -moz-box-shadow: none !important;
@@ -1883,7 +1908,7 @@ span.portfolio-hover a {
     height: 42px;
 }
 
-#map { 
+#map {
     height: 400px;
 }
 
