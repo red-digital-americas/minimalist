@@ -73,8 +73,21 @@
 }
 /* end animation LineThree */
 
-.content{
-  padding: 0px 0px 50px 0px;
+.spaces {
+  padding: 20px 0px 20px 0px;
+}
+
+.spaces1 {
+  padding: 50px 0px 20px 0px;
+}
+
+.spaces2 {
+  margin-top: -180px;
+  padding: 50px 0px 20px 0px;
+}
+
+.spaces3 {
+  padding: 50px 0px 50px 0px;
 }
 
 .casos {
@@ -122,6 +135,15 @@
   text-align: left;
 }
 
+.text_three1 {
+  font-size: 60px;
+  font-family: 'font-one';
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+}
+
 .text_four {
   font-size: 18px;
   font-family: 'font-four';
@@ -129,7 +151,7 @@
 }
 
 .lineOne {
-  margin-left: -15px;
+  margin-left: -25px;
 }
 
 .lineTwo {
@@ -141,8 +163,8 @@
 }
 
 .lineFour {
-  margin-left: 132px;
-  margin-top: -12px;
+  margin-left: 133px;
+  margin-top: -11px;
   display: block;
 }
 
@@ -160,28 +182,118 @@
   font-family: 'font-three';
 }
 
+.bodytext1 {
+  text-align: justify;
+  font-family: 'font-three';
+  color: #000000;
+}
+
 .boton-one {
   font-size: 20px;
+  letter-spacing: 2px;
   font-family: 'font-one';
   border: 2px #02fd9c solid;
-  background-color: #000000;
-  color: #02fd9c;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
 }
 
 .boton-two {
   font-size: 20px;
+  letter-spacing: 2px;
   font-family: 'font-one';
   border: 2px #0ab8ce solid;
-  background-color: #000000;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+}
+
+.textBotonOne {
+  color: #02fd9c;
+}
+
+.textBotonTwo {
   color: #0ab8ce;
 }
 
-.form-group {
-  background-color: rgba(240, 240, 240, 0.1);
+.button:after {
+  background: #1d1d1d;
 }
+
+  /*GREEN*/
+  .b-green, .b-green:before {
+    background: rgba(2,253,156,1);
+    background: -moz-linear-gradient(45deg, rgba(10,184,206,1) 0%, rgba(2,253,156,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(10,184,206,1)), color-stop(100%, rgba(2,253,156,1)));
+    background: -webkit-linear-gradient(45deg, rgba(10,184,206,1) 0%, rgba(2,253,156,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(10,184,206,1) 0%, rgba(2,253,156,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(10,184,206,1) 0%, rgba(2,253,156,1) 100%);
+    background: linear-gradient(45deg, rgba(10,184,206,1) 0%, rgba(2,253,156,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ab8ce', endColorstr='#02fd9c', GradientType=1 );
+  }
+
+/*END GRADIENTS*/
+/*BASE BUTTON*/
+.button {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;font-size: 18px;
+  font-family: 'font-one';
+  border: 2px solid transparent;
+  border-image-slice: 1;
+  padding: 10px 30px 10px 30px;
+}
+.button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all .5s;
+}
+.button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all .5s;
+}
+
+/* Boton degradado 2 */
+
+
 
 .form-control {
   text-transform: uppercase;
-  margin-left: 20px;
+  background-color: rgba(240, 240, 240, 0.1);
+  border: none;
 }
-.background1 { background-color: #1d1d1d; }
+
+.form-control1 {
+  text-transform: uppercase;
+  background-color: #dfdfdf;
+  border: none;
+}
+
+figcaption {
+  text-align: right;
+}
+
+.text_Tel {
+  font-size: 20px;
+  font-family: 'font-one';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0px 0px 0px
+}

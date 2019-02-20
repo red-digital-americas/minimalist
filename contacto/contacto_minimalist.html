@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
+
 <head>
 	<meta charset="utf-8"/>
 	<meta name="author" content="Denis Samardjiev" />
 	<meta name="description" content="Particles - Personal + Agency Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Contacto Publicidad Digital</title>
+	<title>_Minimalist</title>
 
 	<!-- Royal Preloader CSS -->
 	<link href="../css/royal_preloader.css" rel="stylesheet">
 
 	<!-- jQuery Files -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Parallax File -->
+	<script type="text/javascript" src="../js/parallax.min.js"></script>
 
 	<!-- Royal Preloader -->
 	<script type="text/javascript" src="../js/royal_preloader.min.js"></script>
@@ -23,250 +31,274 @@
 		});
 	</script>
 
+<!-- Animate -->
+<link rel="stylesheet" href="../css/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+	<!-- Carousel -->
+<script src='https://static.codepen.io/assets/editor/live/console_runner-1df7d3399bdc1f40995a35209755dcfd8c7547da127f6469fd81e5fba982f6af.js'></script>
+<script src='https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js'></script>
+<meta charset='UTF-8'>
+<meta name="robots" content="noindex">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+<link rel="canonical" href="https://codepen.io/mephysto/pen/ZYVKRY" />
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
 	<!-- Stylesheets -->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/ionicons.min.css" rel="stylesheet">
 	<link href="../css/pe-icon-7-stroke.css" rel="stylesheet">
 	<link href="../css/magnific-popup.css" rel="stylesheet">
 	<link href="../css/logoiconfont.css" rel="stylesheet">
+	<link href="../css/seagul.css" rel="stylesheet">
+	<link href="../css/style-switcher.css" rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet" title="main-css">
 	<link rel="stylesheet" href="../css/styleMinimalist.css">
+	<link href="../css/index.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- Style Switcher / remove for production -->
-	<link href="../css/style-switcher.css" rel="stylesheet">
-
-	<!-- Alternate Stylesheets / choose what color and base you want and include the 2 files regularly AFTER style.css above -->
-	<link rel="alternate stylesheet" type="text/css" href="../css/colors/blue.css" title="blue">
-	<link rel="alternate stylesheet" type="text/css" href="../css/colors/green.css" title="green">
-	<link rel="alternate stylesheet" type="text/css" href="../css/colors/orange.css" title="orange">
-	<link rel="alternate stylesheet" type="text/css" href="../css/colors/red.css" title="red">
-	<link rel="alternate stylesheet" type="text/css" href="../css/colors/orangelight.css" title="orangelight">
-	<link rel="alternate stylesheet" type="text/css" href="../css/colors/pinkish.css" title="pinkish">
-	<link rel="alternate stylesheet" type="text/css" href="../css/colors/seagul.css" title="seagul">
-	<link rel="alternate stylesheet" type="text/css" href="../css/base-light.css" title="base-light">
 </head>
 <body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
 	<div id="royal_preloader"></div>
 
-	<!-- Start Switcher / Remove for production -->
-	<div class="demo_changer">
-	    <div class="demo-icon">
-	        <i class="pe-7s-settings"></i>
-	    </div><!-- end opener icon -->
-	    <div class="form_holder">
-	        <div class="row">
-	            <div class="col-sm-12">
-	                <div class="predefined_styles">
-	                	<h4>Base</h4>
-	                    <a href="" data-rel="main-css" class="styleswitch2"><div class="btn dark-css-square"></div></a>
-	                    <a href="" data-rel="base-light" class="styleswitch2"><div class="btn light-css-square"></div></a>
-	                    <hr>
-	                    <h4>Colors</h4>
-	                    <a href="" data-rel="main-css" class="styleswitch"><div class="btn purple-css-square"></div></a>
-	                    <a href="" data-rel="blue" class="styleswitch"><div class="btn blue-css-square"></div></a>
-	                    <a href="" data-rel="green" class="styleswitch"><div class="btn green-css-square"></div></a>
-	                    <a href="" data-rel="orange" class="styleswitch"><div class="btn orange-css-square"></div></a>
-	                    <a href="" data-rel="red" class="styleswitch"><div class="btn red-css-square"></div></a>
-	                    <a href="" data-rel="orangelight" class="styleswitch"><div class="btn orangelight-css-square"></div></a>
-	                    <a href="" data-rel="seagul" class="styleswitch"><div class="btn seagul-css-square"></div></a>
-	                    <a href="" data-rel="pinkish" class="styleswitch"><div class="btn pinkish-css-square"></div></a>
-	                </div><!-- /.end predefined_styles -->
-	            </div><!-- /.end col -->
-	        </div><!-- /.end row -->
-	    </div><!-- /.end form_holder -->
-	</div><!-- /.end demo_changer -->
-	<!-- End Switcher / Remove for production -->
 
 	<!-- Begin Header -->
 	<header>
-		<!-- Begin Navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="row">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.html"><span class="icon-handle-streamline-vector logo"></span></a>
-					</div>
+		<div class="progress-container">
+	<div class="progress-bar" id="myBar"></div>
+</div>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#home" data-id="home" class="scroll-link">Hello 2016</a></li>
-							<li><a href="#contact" data-id="contact" class="scroll-link">Contact</a>
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+		<!-- Begin Navigation
+			<nav class="navbar navbar-default navbar-fixed-top">-->
+			<div class="row header-back">
+				<div class="col-lg-12">
+				<div id="navigator">
+				<ul id="nav">
+					<li class="nav_tab">
+						<a href="#home"><p>home</p></a>
+					</li>
+					<li class="nav_tab">
+						<a href="#servicios"><p>servicios</p></a>
+					</li>
+					<div class="content">
+						<ul class="ulsubmenu">
+							<li class="lisubmenu"><a href="../servicios/publicidad_digital.html">publicidad digital</a></li>
+							<li class="lisubmenu"><a href="../servicios/desarrollo.html">desarrollo</a></li>
+							<li class="lisubmenu">social media</li>
+							<li class="lisubmenu">data & mailing</li>
 						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div>
-			</div><!-- /.container-fluid -->
-		</nav>
+					</div>
+	        <li class="nav_tab">
+						<a href="#clientes"><p>casos de éxito</p></a>
+					</li>
+
+					<li class="nav_tab">
+						<a href="#"><p>about us</p></a>
+					</li>
+	        <li class="nav_tab">
+						<a href="#"><p>equipo</p></a>
+					</li>
+					<li class="nav_tab">
+						<a href="#"><p>certificaciones</p></a>
+					</li>
+					<li class="nav_tab">
+						<a href="#blog"><p>blog</p></a>
+					</li>
+					<li class="nav_tab">
+						<a href="contacto/contacto_minimalist.html"><p>contacto</p></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="menu-icon">
+				<div class="line_one"></div>
+	 			<div class="line_two"></div>
+	  			<div class="line_three"></div>
+			</div>
+				<script>
+				$('.menu-icon').click(function () {
+						if ($('#navigator').css("left") == "-300px") {
+								$('#navigator').animate({left: '0px'}, 350);
+								$('.menu-icon').animate({left: '300px'}, 350);
+								$('.menu-text').animate({left: '350px'}, 350).empty().text("Close");
+						}
+						else  {
+								$('#navigator').animate({left: '-300px'}, 350);
+								$(this).animate({left: '0px'}, 350);
+								$('.menu-text').animate({left: '50px'}, 350).empty().text("Menu");
+
+						}
+				});
+				$('.menu-icon').click(function () {
+				$(this).toggleClass("on"); });
+
+					var coll = document.getElementsByClassName("nav_tab");
+					var i;
+
+					for (i = 0; i < coll.length; i++) {
+					  coll[i].addEventListener("click", function() {
+					    this.classList.toggle("active");
+					    var content = this.nextElementSibling;
+					    if (content.style.maxHeight){
+					      content.style.maxHeight = null;
+					    } else {
+					      content.style.maxHeight = content.scrollHeight + "px";
+					    }
+					  });
+					}
+				</script>
+</div>
+<div class="float-xs-right">
+		<span class="translate-link">
+		 <a href="#" class="link-translate">esp</a> | <a href="#" class="link-translate">eng</a>
+		</span>
 		<!-- End Navigation -->
+</div>
+
+		</div>
 	</header>
-	<!-- End Header -->
 
-	<!-- Begin Jumbotron -->
-	<div class="jumbotron jumbotron-main" id="home">
-		<div id="particles-js"></div><!-- /.particles div -->
-		<div class="container center-vertically-holder">
-			<div class="center-vertically">
-				<div id="scaleReveal" class="col-sm-12 text-center">
-					<h1 class="mb40">
-						Coming <strong>Soon</strong>.
-					</h1>
-					<div id="clock"></div>
-					<a href="#contact" data-id="contact" class="scroll-link btn btn-default btn-white btn-lg mt40">Send us a message <span class="ion-android-arrow-down"></span></a>
-				</div><!-- /.column -->
-			</div><!-- /.vertical center -->
-		</div><!-- /.container -->
-	</div>
-	<!-- End Jumbotron -->
+	<main>
+		<div class="row spaces1">
+			<div class="col-lg-6">
+				<img class="lineOne" src="../images/lineOne.png" alt="">
+				<img class="lineTwo" src="../images/lineTwo.png" alt="">
+			</div>
+			<div class="col-lg-6">
+				<img class="lineThree" src="../images/lineThree.png" alt="">
+				<img class="lineFour" src="../images/lineFour.png" alt="">
+			</div>
+		</div>
 
-	<!-- Begin Contact -->
-	<section id="contact" class="background1 section-padding">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 section-title text-center">
-					<h2>Contact</h2>
-					<span class="section-divider"></span>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2 mt30-xs">
-					<form data-toggle="validator" id="contactForm" name="contactForm">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" data-error="This section is required."
-										id="msg_subject" placeholder="Subject *" required="" type="text">
-										<div class="help-block with-errors"></div>
+			<div class="row spaces">
+				<div class="col-lg-12">
+					<p class="text_three"><span class="line_color">_</span>CONTACTO</p>
+				</div>
+			</div>
+			<div class="row spaces">
+				<div class="col-lg-12">
+					<p class="bodytext">
+						<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoree.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoree.</span>
+					</p>
+				</div>
+			</div>
+	<!-- Begin Contact -->
+		<div class="container">
+			<div class="row spaces3">
+				<div class="col-lg-4 text-left">
+					<a href="#"><i class="fa fa-facebook-square fa-2x fa-fw" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i></a>
+					<p class="text_Tel">tel: 84369727</p>
+				</div>
+				<div class="col-lg-8">
+						<form data-toggle="validator" id="contactForm" name="contactForm">
+							<div class="row mb10">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input class="form-control" data-error="Campo requerido." id="name" placeholder="Nombre *" required="" type="text">
+											<div class="help-block with-errors"></div>
+										</div>
 									</div>
-								</div>
-							</div><!-- /.column -->
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" id="phone" placeholder="Phone" type="text">
+								</div><!-- /.column -->
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input class="email form-control" data-error="Campo requerido." id="email" placeholder="Email *" required="" type="email">
+											<div class="help-block with-errors"></div>
+										</div>
 									</div>
-								</div>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-						<div class="row mb10">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="form-control" data-error="This section is required." id="name" placeholder="Your Name *" required="" type="text">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-							<div class="col-sm-6">
-								<div class="form-group">
-									<div class="controls">
-										<input class="email form-control" data-error="This section is required." id="email" placeholder="Email *" required="" type="email">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="controls">
-										<textarea class="form-control" data-error="This section is required." id="message" placeholder="Message *" required="" rows="5"></textarea>
-										<div class="help-block with-errors"></div>
+								</div><!-- /.column -->
+							</div><!-- /.row -->
+							<div class="row spaces">
+								<div class="col-sm-12">
+									<div class="form-group">
+										<div class="controls">
+											<textarea class="form-control" data-error="Campo requerido." id="message" placeholder="Mensaje *" required="" rows="10"></textarea>
+											<div class="help-block with-errors"></div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row mt15">
-							<div class="col-sm-6">
-								<div id="msgSubmit" class="h4 hidden mt10 no-margin-bottom"></div>
-							</div><!-- /.column -->
-							<div class="col-sm-6 text-right">
-								<button type="submit" id="submit" class="btn btn-default btn-lg">Send</button>
-							</div><!-- /.column -->
-						</div><!-- /.row -->
-					</form><!-- /.form -->
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section><!-- /.section -->
-	<!-- End Contact -->
-
-	<!-- Begin Map -->
-	<div id="map"></div>
-	<!-- End Map -->
+							<div class="row mt15">
+								<div class="col-sm-6 text-left">
+									<a href="#"class="button b-green">_Enviar</a>
+								</div><!-- /.column -->
+							</div><!-- /.row -->
+						</form><!-- /.form -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		<!-- End Contact -->
+				</div>
+	</main>
 
 	<!-- Begin Footer -->
-	<footer class="background2 footer-padding">
-		<div class="container">
+	<footer id="footer" class="footer-padding">
+		<div class="container-footer">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2 text-center">
-					<span class="icon-handle-streamline-vector logo"></span>
-					<h2 class="theme-title">Particles<span class="theme-title-smaller">Theme</span></h2>
-					<a href="#"><span class="ion-social-twitter social-icons-dark-hover mr15"></span></a>
-	                <a href="#"><span class="ion-social-facebook social-icons-dark-hover mr15"></span></a>
-	                <a href="#"><span class="ion-social-googleplus-outline social-icons-dark-hover"></span></a>
+				<div class="col-sm-6 col-lg-6">
+						<div class="footer-menu">
+							<ul class="footer-ul">
+								<li class="footer-menu"><a href="#" class="link-footer">servicios</a></li>
+								<li class="footer-menu"><a href="#" class="link-footer">casos de éxito</a></li>
+								<li class="footer-menu"><a href="#" class="link-footer">about us</a></li>
+								<li class="footer-menu"><a href="#" class="link-footer">equipo</a></li>
+								<li class="footer-menu"><a href="#" class="link-footer">certificaciones</a></li>
+								<li class="footer-menu"><a href="#" class="link-footer">blog</a></li>
+								<li class="footer-menu"><a href="#" class="link-footer">contacto</a></li>
+							</ul>
+						</div>
+				</div>
+				<div class="col-sm-6 col-lg-6 text-right">
+					<div class="row">
+						<img class="img-min-footer" src="../images/logo.png" alt="logo Minimalist">
+					</div>
+					<div class="row">
+						<div class="logos">
+					        <a class="logo-foot" href="#">
+											<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+												<path fill="#696969" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
+											</svg>
+					        </a>
+									<a class="logo-foot" href="#">
+										<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+											<path fill="#696969" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+										</svg>
+									</a>
+							</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
-					<hr>
-					<button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
-					<p class="no-margin">&copy; Denis Samardjiev</p>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
+
 		</div><!-- /.container -->
 	</footer><!-- /.footer -->
-	<!-- Begin Footer -->
+
+	<!-- End Footer -->
 
 	<!-- Javascript Files -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async defer></script>
-    <script type="text/javascript">
-		/* ---- Google Maps ---- */
-        function initMap() {
-            var mapOptions = {
-                zoom: 15,
-				zoomControl: false,
-				scaleControl: false,
-				scrollwheel: false,
-				disableDoubleClickZoom: true,
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
-                styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-            };
-            var mapElement = document.getElementById('map');
-            var map = new google.maps.Map(mapElement, mapOptions);
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.6700, -73.9400),
-                map: map,
-                title: 'Our Office!'
-            });
-        }
-    </script>
-	<script type="text/javascript" src="js/particles.min.js"></script>
-	<script type="text/javascript" src="js/particlesRun.js"></script>
-	<script type="text/javascript" src="js/jquery.mixitup.js"></script>
-	<script type="text/javascript" src="js/form-validator.min.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-	<script type="text/javascript">
-		/* ---- Countdown ---- */
-		$('#clock').countdown('2020/12/25').on('update.countdown', function(event) {
-		  var $this = $(this).html(event.strftime(''
-		    + '<div class="clock-section"> <b>%-w</b> <span>week%!w</span> </div>'
-		    + '<div class="clock-section"> <b>%-d</b> <span>day%!d</span> </div>'
-		    + '<div class="clock-section"> <b>%H</b> <span>hours</span> </div>'
-		    + '<div class="clock-section"> <b>%M</b> <span>min</span> </div>'
-		    + '<div class="clock-section"> <b>%S</b> <span>sec</span> </div>'));
-		});
-	</script>
-	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
-	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript" src="../js/particles.min.js"></script>
+	<script type="text/javascript" src="../js/particlesRun.js"></script>
+	<script type="text/javascript" src="../js/jquery.mixitup.js"></script>
+	<script type="text/javascript" src="../js/form-validator.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.countTo.js"></script>
 	<script type="text/javascript">
 		/* ---- Counter (our count) ---- */
 		$('#ourcount').one('inview', function(event, isInView) {
@@ -275,9 +307,10 @@
 			}
 		});
 	</script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
-	<script type="text/javascript" src="js/style-switcher.js"></script><!-- Remove for production -->
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="../js/scrollreveal.min.js"></script>
+
+
+	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
