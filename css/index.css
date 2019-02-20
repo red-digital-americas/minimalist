@@ -376,6 +376,26 @@ color: inherit;
   background: none;
   -webkit-transform: translate(0,-100%);
 }
+
+/*------------NUEVOS CLIENTES Y FIDELIZAR-------------------------*/
+.blanco{
+  background: #f0f0f0;
+  color: #999999;
+}
+.preg-blanco{
+  color: #3a3a3a;
+}
+.p-blanco{
+  text-align: left;
+  line-height: 20px;
+  font-size: 14px;
+}
+.img-wh{
+  width: 50%;
+}
+
+
+
 /*-------clientes-----*/
 .btn-primary {
     color: #fff;
