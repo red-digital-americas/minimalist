@@ -47,6 +47,10 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
+<!--W&B Section-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 	<!-- Stylesheets -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/ionicons.min.css" rel="stylesheet">
@@ -57,6 +61,7 @@
 	<link href="css/style-switcher.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" title="main-css">
 	<link href="css/index.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 
 
 </head>
@@ -65,10 +70,12 @@
 
 
 	<!-- Begin Header -->
+
+	<!-- Begin Progress Bar-->
 	<header>
 		<div class="progress-container">
-	<div class="progress-bar" id="myBar"></div>
-</div>
+			<div class="progress-bar" id="myBar"></div>
+		</div>
 <script>
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -80,6 +87,9 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 </script>
+	<!-- End Progress Bar-->
+
+	<!-- Begin MENU-->
 		<!-- Begin Navigation
 			<nav class="navbar navbar-default navbar-fixed-top">-->
 			<div class="row header-back">
@@ -96,8 +106,8 @@ function myFunction() {
 						<ul class="ulsubmenu">
 							<li class="lisubmenu"><a href="servicios/publicidad_digital.html">publicidad digital</a></li>
 							<li class="lisubmenu"><a href="servicios/desarrollo.html">desarrollo</a></li>
-							<li class="lisubmenu">social media</li>
-							<li class="lisubmenu">data & mailing</li>
+							<li class="lisubmenu"><a href="#">social media</a></li>
+							<li class="lisubmenu"><a href="#">data & mailing</a></li>
 						</ul>
 					</div>
 	        <li class="nav_tab">
@@ -164,7 +174,7 @@ function myFunction() {
 					<span class="translate-link">
 							<a href="#" class="link-translate">esp</a> | <a href="#" class="link-translate">eng</a>
 					</span>
-
+<!-- End MENU-->
 
 <!-- /.container-fluid
 		</nav>-->
@@ -254,9 +264,9 @@ $('.multi-item-carousel .item').each(function () {
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 section-title text-center">
-					<h2 class="">servicios</h2>
+					<h2 class="scaleReveal">servicios</h2>
 
-					<span class="section-divider"></span>
+					<span class="section-divider bottomReveal"></span>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 
@@ -330,53 +340,54 @@ $('.multi-item-carousel .item').each(function () {
 	</section><!-- /.section -->
 	<!-- End Services -->
 
-
+<!--BEGIN Que busca tu empresa-->
 	<!-- Begin Que busca tu empresa BLANCO -->
 	<section id="nuevos-clientes" class="blanco">
 		<div class="container">
-		<div class="row">
-			<div class="col-12 preg-blanco">
-				<h2>¿que busca tu empresa?</h2>
+		<div class="row" style="padding-bottom:3%;">
+			<div class="col-12 preg-blanco align-self-center text-center">
+				<h2 class="preg-blanco bottomReveal">¿que busca tu empresa?</h2>
+				<span class="blackline topReveal"></span>
 			</div>
 		</div>
-		<div class="row">
-				<div class"col-lg-3 link-nuevos">
-					<a href="#"><h3>nuevos clientes</h3></a>
+		<div class="row align-self-center content-center">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  link-box">
+					<a id="link-nuevos-clientes-blanco" href="#nuevos-clientes" class="link-nuevos"><h3 class="qbusca-link-1">nuevos clientes</h3></a>
 				</div>
-				<div class="col-lg-3 link-fidelizar">
-					<a href="#"><h3>fidelizar clientes</h3></a>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 link-box ">
+					<a id="link-fidelizar-clientes-blanco" href="#fidelizar-clientes" class="link-fidelizar"><h3 class="qbusca-link-2">fidelizar clientes</h3></a>
 				</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-6 p-blanco">
-			<h3>ads</h3>
+		<div class="row justify-content-md-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-blanco">
+			<h3 class="title-blanco">ads</h3>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
 			</p>
 			</div>
-			<div class="col-lg-6 img-blanco">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
 				<img class="img-wh" src="images/svgAnimados/icon.svg" alt="ads">
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-6 img-blanco">
+		<div class="row align-self-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
 				<img class="img-wh" src="images/svgAnimados/icon5.svg" alt="ads">
 			</div>
-			<div class="col-lg-6 p-blanco">
-			<h3>ads</h3>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left; line-height: 20px; font-size: 14px; padding: 7% 10% 7% 0px;">
+			<h3 class="title-blanco">desarrollo</h3>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.
 			</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-6 p-blanco">
-			<h3>ads</h3>
+		<div class="row align-self-center content-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-blanco">
+			<h3 class="title-blanco">medición</h3>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.
 			</p>
 			</div>
-			<div class="col-lg-6 img-blanco">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
 				<img class="img-wh" src="images/svgAnimados/icon7.svg" alt="ads">
 			</div>
 		</div>
@@ -385,18 +396,86 @@ $('.multi-item-carousel .item').each(function () {
 	<!-- End Que busca tu empresa BLANCO -->
 	<!-- Begin Que busca tu empresa NEGRO -->
 	<section id="fidelizar-clientes" class="negro">
-
+		<div class="container">
+		<div class="row" style="padding-bottom:3%;">
+			<div class="col-12 preg-negro align-self-center text-center">
+				<h2 class="preg-negro">¿que busca tu empresa?</h2>
+				<span class="whiteline"></span>
+			</div>
+		</div>
+		<div class="row align-self-center content-center">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  link-box">
+					<a id="link-nuevos-clientes-negro" href="#nuevos-clientes" class="link-nuevos"><h3 class="qbusca-link-3">nuevos clientes</h3></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 link-box ">
+					<a id="link-fidelizar-clientes-negro" href="#fidelizar-clientes" class="link-fidelizar"><h3 class="qbusca-link-4">fidelizar clientes</h3></a>
+				</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-blanco">
+			<h3 class="title-negro">social media</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+			</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
+				<img class="img-wh" src="images/svgAnimados/icon9.svg" alt="ads">
+			</div>
+		</div>
+		<div class="row align-self-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
+				<img class="img-wh" src="images/svgAnimados/icon8.svg" alt="ads">
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left; line-height: 20px; font-size: 14px; padding: 7% 10% 7% 0px;">
+			<h3 class="title-negro">data & crm</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.
+			</p>
+			</div>
+		</div>
+		<div class="row align-self-center content-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-blanco">
+			<h3 class="title-negro">medición</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.
+			</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
+				<img class="img-wh" src="images/svgAnimados/icon7.svg" alt="ads">
+			</div>
+		</div>
+		</div>
 	</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$("#link-fidelizar-clientes-blanco").on('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#nuevos-clientes').hide("blind", { direction: "left" }, 700, function () {
+            $('#fidelizar-clientes').show("blind", { direction: "right" }, 700);
+        });
+    });
+    $("#link-nuevos-clientes-negro").on('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#fidelizar-clientes').hide("blind", { direction: "right" }, 700, function () {
+            $('#nuevos-clientes').show("blind", { direction: "left" }, 700);
+        });
+    });
+	</script>
 	<!-- End Que busca tu empresa NEGRO -->
+<!--END Que busca tu empresa-->
+
 
 	<!-- Begin Clientes -->
 	<section id="clientes" class="background2 section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 section-title text-center">
-					<h2>clientes</h2>
+					<h2 class="topReveal">clientes</h2>
 
-					<span class="section-divider"></span>
+					<span class="section-divider bottomReveal"></span>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 			<div class="row mb40">
@@ -500,8 +579,8 @@ $('.multi-item-carousel .item').each(function () {
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 section-title text-center">
-					<h2>blog</h2>
-					<span class="section-divider mb15"></span>
+					<h2 class="bottomReveal">blog</h2>
+					<span class="section-divider bottomReveal"></span>
 					<p class="mb30 scaleReveal">We do awesome stuff, and yeah.</p>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
@@ -656,18 +735,10 @@ $('.multi-item-carousel .item').each(function () {
 					<div class="row">
 						<img class="img-min-footer" src="images/logo.png" alt="logo Minimalist">
 					</div>
-					<div class="row">
+					<div class="row text-right">
 						<div class="logos">
-					        <a class="logo-foot" href="#">
-											<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-												<path fill="#696969" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
-											</svg>
-					        </a>
-									<a class="logo-foot" href="#">
-										<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-											<path fill="#696969" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
-										</svg>
-									</a>
+							<a class="logo-foot" href="#"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+							<a class="logo-foot" href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
 							</div>
 					</div>
 				</div>
