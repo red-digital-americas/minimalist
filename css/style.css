@@ -332,7 +332,7 @@ ul.list-arrow-color li:before {
 		display: inline-block;
     margin-top: 20px;
     margin-bottom: 30px;
-    width: 100px;
+    width: 85px;
     height: 1px;
 		background-color: #0ab8ce;
 		/* For browsers that do not support gradients */
