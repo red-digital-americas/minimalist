@@ -392,7 +392,8 @@ h2{
 /*-------------------------------------------NUEVOS CLIENTES Y FIDELIZAR-------------------------*/
 /*-------------------------------------------BLANCO*/
 #nuevos-clientes{
-  z-index: -9999;
+  position: relative;
+  z-index: 100;
 }
 h3.title-blanco{
   font-family: "font-one", sans-serif;
@@ -538,9 +539,10 @@ h3.qbusca-link-2:hover{
   height: auto;
   width: 100%;
   display: none;
-  z-index: 999;
   padding-bottom: 3%;
   left:-2000px;
+  position: absolute;
+  z-index: 2;
 }
 h3.title-negro{
   font-family: "font-one", sans-serif;
@@ -667,19 +669,26 @@ h3.qbusca-link-4:hover{
 }
 /*pruebas--------------------------------------*/
 #a1{
-  background-color: #000000;
+  background: #1f1f1f;
   position: absolute;
   z-index: 2;
+  right:0;
+  left:0;
 }
 
 #a2{
-  background-color: #ffffff;
+  background: #f0f0f0;
   position: relative;
   z-index: 100;
+  right:0;
+  left:0;
 }
 
 #a3{
+  background: #1f1f1f;
   position: relative;
+  z-index: 2;
+  display: none;
 }
 
 
@@ -702,6 +711,7 @@ h3.qbusca-link-4:hover{
     width: 150px;
     transition:all 0.7s linear;
 }
+
 
 /*------------------Estilos BLog Home----------------*/
 .box-blog{
