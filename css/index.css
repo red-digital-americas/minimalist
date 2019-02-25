@@ -1,10 +1,10 @@
 section{
   margin-right: none;
-  background: #141414; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #141414 0%, #3b3b3b 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #141414 0%,#3b3b3b 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #141414 0%,#3b3b3b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#3b3b3b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #0e0e0e; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #000000 0%, #1c1c1c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #000000 0%, #1c1c1c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #000000 0%, #1c1c1c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#1c1c1c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .main-title{
@@ -112,7 +112,7 @@ section{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.7s ease-out;
-  background-color: #222222;
+  background-color: #141414;
   text-transform: capitalize;
   font-size: 14px;
 }
@@ -132,7 +132,10 @@ height: auto;
 position: fixed;
 top: 0;
 left: -300px;
-background: -webkit-linear-gradient(45deg, #141414 0%,#3b3b3b 100%); /* Chrome10-25,Safari5.1-6 */
+background: -moz-linear-gradient(45deg, #000000 0%, #1c1c1c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #000000 0%, #1c1c1c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #000000 0%, #1c1c1c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#1c1c1c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 float: left;
 z-index: 10;
 padding-right: 1%;
@@ -224,7 +227,7 @@ border-radius: 2px;
 /* ------ Carousel--------*/
 #carrusel{
   z-index: 1;
-  background: #141414 !important;
+  background: #0e0e0e !important;
   -webkit-box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
 -moz-box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
 box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
@@ -388,6 +391,9 @@ h2{
 
 /*-------------------------------------------NUEVOS CLIENTES Y FIDELIZAR-------------------------*/
 /*-------------------------------------------BLANCO*/
+#nuevos-clientes{
+  z-index: -9999;
+}
 h3.title-blanco{
   font-family: "font-one", sans-serif;
   text-transform: uppercase;
@@ -534,6 +540,7 @@ h3.qbusca-link-2:hover{
   display: none;
   z-index: 999;
   padding-bottom: 3%;
+  left:-2000px;
 }
 h3.title-negro{
   font-family: "font-one", sans-serif;
@@ -658,28 +665,56 @@ h3.qbusca-link-4:hover{
   color: #02fd9c;
   font-weight: 900;
 }
+/*pruebas--------------------------------------*/
+#a1{
+  background-color: #000000;
+  position: absolute;
+  z-index: 2;
+}
 
+#a2{
+  background-color: #ffffff;
+  position: relative;
+  z-index: 100;
+}
 
+#a3{
+  position: relative;
+}
 
 
 
 /*-------clientes-----*/
 .btn-primary {
     color: #fff;
+    font-size: 12px;
     background-color: transparent !important;
     border-color: #2e6da4;
-    width: 15%;
+    width: 150px;
+    transition:all 0.7s linear;
+}
+.btn-primary:hover {
+    color: #02fd9c;
+    font-size: 12px;
+    background-color: transparent !important;
+    border-color: #02fd9c;
+    font-weight: 900;
+    width: 150px;
+    transition:all 0.7s linear;
 }
 
-
 /*------------------Estilos BLog Home----------------*/
+.box-blog{
+  margin: 3% 1% 4% 1%;
+  background: #000000;
+}
 .blog-text{
   text-align: right;
   color: #737373;
   padding-right: 3%;
   margin-left: 3%;
   margin-right: 3%;
-  padding-bottom: 10%;
+  padding-bottom: 1%
 }
 
 .blog-text p{
@@ -723,6 +758,10 @@ h3.qbusca-link-4:hover{
   margin-right: 5%;
 }
 
+.pad-blog{
+  margin-bottom: 5%;
+}
+
 
 /*------------Footer-------------------*/
 #footer{
@@ -730,6 +769,7 @@ h3.qbusca-link-4:hover{
   height: auto;
   display: inherit;
   padding-bottom: 3%;
+  background: #141414;
 }
 .img-min-footer{
   width: 40%;
@@ -1000,11 +1040,11 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
-	background: #141414; /* Old browsers */
-	background: -moz-linear-gradient(left, #222222 0%, #141414 35%, #262626 66%, #111111 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #222222 0%,#141414 35%,#262626 66%,#111111 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #222222 0%,#141414 35%,##262626 66%,#111111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#111111',GradientType=1 ); /* IE6-9 */
+	background: #0f0f0f; /* Old browsers */
+	background: -moz-linear-gradient(left, #000000 0%, #1f1f1f 35%, #0e0e0e 66%, #0d0d0d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #000000 0%, #1f1f1f 35%, #0e0e0e 66%, #0d0d0d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #000000 0%, #1f1f1f 35%, #0e0e0e 66%, #0d0d0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='0d0d0d',GradientType=1 ); /* IE6-9 */
 }
 
 /* =Our Process
