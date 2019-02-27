@@ -113,6 +113,14 @@ function myFunction() {
 	        <li class="nav_tab">
 						<a href="#clientes"><p>casos de éxito</p></a>
 					</li>
+					<div class="content">
+						<ul class="ulsubmenu">
+							<li class="lisubmenu"><a href="casos_de_exito/taylor_made.html">taylor made</a></li>
+							<li class="lisubmenu"><a href="#">miele</a></li>
+							<li class="lisubmenu"><a href="#">royal canin</a></li>
+							<li class="lisubmenu"><a href="#">sodexo</a></li>
+						</ul>
+					</div>
 
 					<li class="nav_tab">
 						<a href="#"><p>about us</p></a>
@@ -211,7 +219,6 @@ function myFunction() {
 
 	<!-- Begin Carousel -->
 	<section id="carrusel">
-
   <div class="row carousel-cert">
       <div class="carousel slide multi-item-carousel" id="theCarousel">
         <div class="carousel-inner">
@@ -341,20 +348,16 @@ $('.multi-item-carousel .item').each(function () {
 	<!-- End Services -->
 
 <!--BEGIN Que busca tu empresa-->
-	<!-- Begin Que busca tu empresa BLANCO -->
 
-	<!-- End Que busca tu empresa BLANCO -->
 	<!-- Begin Que busca tu empresa NEGRO -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-	<!-- End Que busca tu empresa NEGRO -->
-<!--END Que busca tu empresa-->
-
-<!--ETEEEEEEEEESSSSSSSST-->
+<!-- script botones -->
 
 <section id="que-busca">
+
 
 	 <div id="a1">
 		<div class="container">
@@ -407,6 +410,8 @@ $('.multi-item-carousel .item').each(function () {
 		</div>
 		</div>
 	</div>
+	<!-- End Que busca tu empresa NEGRO -->
+	<!-- Begin Que busca tu empresa BLANCO -->
 	<div id="a2">
 		<div class="container">
 		<div class="row" style="padding-bottom:3%;">
@@ -417,8 +422,11 @@ $('.multi-item-carousel .item').each(function () {
 		</div>
 		<div class="row align-self-center content-center">
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  link-box">
-					<a id="link-a2-2" href="#a2" class="link-nuevos"><h3 class="qbusca-link-1">nuevos clientes</h3></a>
+					<a id="link-a2-2" href="#a2" class="link-nuevos"><h3 class="qbusca-link-1">nuevos clientes</h3>
+						<div id="box" class="line-n"></div>
+					</a>
 				</div>
+
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 link-box ">
 					<a id="link-a1-2" href="#a1" class="link-fidelizar"><h3 class="qbusca-link-2">fidelizar clientes</h3></a>
 				</div>
@@ -458,32 +466,36 @@ $('.multi-item-carousel .item').each(function () {
 		</div>
 		</div>
 	</div>
+<!-- End Que busca tu empresa BLANCO -->
+<script>
+$('#link-a2-2').click( function () {
+		document.getElementsByClassName('.line-n').style.width = "35%";
+		$( "#box" ).slideDown( "slow", function() {
+    // Animation complete.
+  });
+});
 
-
-
-	<script>
-	$('#link-a1-2').on('click', function () {
-			$('#a2').hide("blind", { direction: "left" }, 700 );
-			document.getElementById('a1').style.position = "relative";
-			$('#a1').show("blind", { direction: "right" }, 700);
-			document.getElementById('a2').style.position = "absolute";
-				});
-	</script>
-
-	<script>
-	$('#link-a2-1').on('click', function () {
+$('#link-a1-2').on('click', function () {
+		$('#a2').hide("blind", { direction: "left" }, 700 );
+		document.getElementById('a1').style.position = "relative";
+		$('#a1').show("blind", { direction: "right" }, 700);
+		document.getElementById('a2').style.position = "absolute";
+			});
+</script>
+<script>
+$('#link-a2-1').on('click', function () {
 		document.getElementById('a2').style.position = "relative";
 		document.getElementById('a1').setAttribute(
-   "style", "position: absolute;");
-		$('#a1').hide("blind", { direction: "right" }, 700);
-		$('#a2').show("blind", { direction: "left" }, 700);
-
-		document.getElementById('que-busca').scrollTo();
+ 			"style", "position: absolute;");
+	$('#a1').hide("blind", { direction: "right" }, 700);
+	$('#a2').show("blind", { direction: "left" }, 700);
+	document.getElementById('que-busca').scrollTo();
 			});
-
-
-	</script>
+</script>
 </section>
+
+<!--END Que busca tu empresa-->
+
 
 
 
@@ -753,7 +765,7 @@ $('.multi-item-carousel .item').each(function () {
 								<li class="footer-menu"><a href="#equipo" class="link-footer">equipo</a></li>
 								<li class="footer-menu"><a href="#certificaciones" class="link-footer">certificaciones</a></li>
 								<li class="footer-menu"><a href="#blog" class="link-footer">blog</a></li>
-								<li class="footer-menu"><a href="#contacto" class="link-footer">contacto</a></li>
+								<li class="footer-menu"><a href="contacto/contacto_minimalist.html" class="link-footer">contacto</a></li>
 							</ul>
 						</div>
 				</div>
@@ -776,6 +788,9 @@ $('.multi-item-carousel .item').each(function () {
 	<!-- End Footer -->
 
 	<!-- Javascript Files -->
+
+
+
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
