@@ -445,7 +445,7 @@ h3.title-blanco{
   padding: 7% 0px 7% 0px;
 }
 /*--link nuevos--*/
-h3.qbusca-link-1{
+.qbusca-link-1{
   font-family: "font-one", sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -453,7 +453,7 @@ h3.qbusca-link-1{
   font-size: 25px;
   font-weight: 900;
 }
-h3.qbusca-link-1:hover{
+.qbusca-link-1:hover{
   color: #0ab8ce;
   font-weight: 900;
 }
@@ -468,45 +468,60 @@ h3.qbusca-link-1:hover{
   text-decoration: none;
   font-weight: 900;
 }
-.qbusca-link-1:after{
+.link-nuevos:before {
   content: "";
   position: absolute;
-  width: 35%;
+  width: 200px;
   height: 3px;
   bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  left: 32%;
   background: #0ab8ce;
-  visibility: visible;
-  transform: scaleX(1);
-  color: #02fd9c;
-  font-weight: 900;
+  visibility: hidden;
   border-radius: 5px;
   transform: scaleX(0);
-  transition: 0.25s linear;
+  transition: .25s linear;
+  color: #02fd9c;
+  font-weight: 900;
+}
+.link-nuevos:hover:before,
+.link-nuevos:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
   color: #0ab8ce;
   font-weight: 900;
 }
-.qbusca-link-1:hover:after{
-  visibility: visible;
-  transform: scaleX(1);
-  color: #02fd9c;
-  font-weight: 900;
-}
-.line-n{
-  background: #0ab8ce;
+
+
+#div-line-n {
+  width: 35%;
   height: 3px;
-  width: 0%;
+  z-index: 9999;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  transition: 0.25s linear;
+  margin-top: -3px;
 }
 
+#line-n {
+  height: 3px;
+  background-color: #0ab8ce;
+  width: 0%;
+}
+
+.line-f{
+  background: #02fd9c;
+  height: 3px;
+  width: 35%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3px;
+  transition: 0.25s linear;
+}
 
 
 

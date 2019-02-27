@@ -372,7 +372,9 @@ $('.multi-item-carousel .item').each(function () {
 					<a id="link-a2-1" href="#a2" class="link-nuevos"><h3 class="qbusca-link-3">nuevos clientes</h3></a>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 link-box ">
-					<a id="link-a1-1" href="#a1" class="link-fidelizar"><h3 class="qbusca-link-4">fidelizar clientes</h3></a>
+					<a id="link-a1-1" href="#a1" class="link-fidelizar"><h3 class="qbusca-link-4">fidelizar clientes</h3>
+						<div id="box" class="line-f"></div>
+					</a>
 				</div>
 		</div>
 		<div class="row justify-content-md-center">
@@ -423,7 +425,9 @@ $('.multi-item-carousel .item').each(function () {
 		<div class="row align-self-center content-center">
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  link-box">
 					<a id="link-a2-2" href="#a2" class="link-nuevos"><h3 class="qbusca-link-1">nuevos clientes</h3>
-						<div id="box" class="line-n"></div>
+						<div id="div-line-n">
+							<div id="line-n"></div>
+						</div>
 					</a>
 				</div>
 
@@ -468,18 +472,31 @@ $('.multi-item-carousel .item').each(function () {
 	</div>
 <!-- End Que busca tu empresa BLANCO -->
 <script>
-$('#link-a2-2').click( function () {
-		document.getElementsByClassName('.line-n').style.width = "35%";
-		$( "#box" ).slideDown( "slow", function() {
-    // Animation complete.
-  });
-});
-
+var link = document.getElementById("link-a2-2")
+var x = document.getElementsByClassName("qbusca-link-1");
+link.onclick = function() {fill()};
+window.onload = function() {fill()};
+function fill() {
+	x[0].style.cssText = "color: #0ab8ce;";
+  var elem = document.getElementById("line-n");
+  var width = 1;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }}}
+</script>
+<script>
+var y = document.getElementsByClassName("qbusca-link-4");
 $('#link-a1-2').on('click', function () {
 		$('#a2').hide("blind", { direction: "left" }, 700 );
 		document.getElementById('a1').style.position = "relative";
 		$('#a1').show("blind", { direction: "right" }, 700);
 		document.getElementById('a2').style.position = "absolute";
+		y[0].style.cssText = "color: #02fd9c;";
 			});
 </script>
 <script>
@@ -517,12 +534,12 @@ $('#link-a2-1').on('click', function () {
 					<div class="team-member-box">
 
 						<div class="team-image-wrapper">
-							<img src="images/clientes-home/miele1.jpg" alt="2 Member" class="img-responsive team-member-img">
+							<img src="images/clientes-home/taylor1.jpg" alt="2 Member" class="img-responsive team-member-img">
 
 							<span class="team-image-hover">
 								<span class="team-hover-content">
 									<!-- Social -->
-									<img src="images/clientes-home/miele2.jpg" class="img-responsive img-hover-cliente">
+									<a href="casos_de_exito/taylor_made.html"><img src="images/clientes-home/taylor2.jpg" class="img-responsive img-hover-cliente"></a>
 								</span>
 							</span>
 
