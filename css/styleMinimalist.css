@@ -219,6 +219,9 @@
 .button:after {
   background: #1d1d1d;
 }
+.button2:after {
+  background: #f0f0f0;
+}
 
   /*GREEN*/
   .b-green, .b-green:before {
@@ -245,7 +248,30 @@
   border-image-slice: 1;
   padding: 10px 30px 10px 30px;
 }
+.button2 {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;font-size: 18px;
+  font-family: 'font-one';
+  border: 2px solid transparent;
+  border-image-slice: 1;
+  padding: 10px 30px 10px 30px;
+}
 .button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all .5s;
+}
+.button2:before {
   content: '';
   display: block;
   position: absolute;
@@ -269,7 +295,18 @@
   border-radius: 100px;
   transition: all .5s;
 }
-
+.button2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all .5s;
+}
 /* Boton degradado 2 */
 
 

@@ -392,7 +392,8 @@ h2{
 /*-------------------------------------------NUEVOS CLIENTES Y FIDELIZAR-------------------------*/
 /*-------------------------------------------BLANCO*/
 #nuevos-clientes{
-  z-index: -9999;
+  position: relative;
+  z-index: 100;
 }
 h3.title-blanco{
   font-family: "font-one", sans-serif;
@@ -456,6 +457,7 @@ h3.qbusca-link-1:hover{
   color: #0ab8ce;
   font-weight: 900;
 }
+
 .link-nuevos{
   text-decoration: none;
   color: rgba(0,0,0,.4);
@@ -466,28 +468,55 @@ h3.qbusca-link-1:hover{
   text-decoration: none;
   font-weight: 900;
 }
-.link-nuevos:before {
+.qbusca-link-1:after{
   content: "";
   position: absolute;
-  width: 200px;
+  width: 35%;
   height: 3px;
   bottom: 0;
-  left: 32%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   background: #0ab8ce;
-  visibility: hidden;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: .25s linear;
-  color: #0ab8ce;
-  font-weight: 900;
-}
-.link-nuevos:hover:before,
-.link-nuevos:focus:before {
   visibility: visible;
   transform: scaleX(1);
+  color: #02fd9c;
+  font-weight: 900;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: 0.25s linear;
   color: #0ab8ce;
   font-weight: 900;
 }
+.qbusca-link-1:hover:after{
+  visibility: visible;
+  transform: scaleX(1);
+  color: #02fd9c;
+  font-weight: 900;
+}
+.line-n{
+  background: #0ab8ce;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.25s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*--link fidelizar--*/
 h3.qbusca-link-2{
   font-family: "font-one", sans-serif;
@@ -538,9 +567,10 @@ h3.qbusca-link-2:hover{
   height: auto;
   width: 100%;
   display: none;
-  z-index: 999;
   padding-bottom: 3%;
   left:-2000px;
+  position: absolute;
+  z-index: 2;
 }
 h3.title-negro{
   font-family: "font-one", sans-serif;
@@ -588,38 +618,36 @@ h3.qbusca-link-3:hover{
   color: #0ab8ce;
   font-weight: 900;
 }
-.link-nuevos{
-  text-decoration: none;
-  color: rgba(0,0,0,.4);
-  z-index: 1;
-}
-.link-nuevos:hover{
-  color: #0ab8ce;
-  text-decoration: none;
-  font-weight: 900;
-}
-.link-nuevos:before {
+
+.qbusca-link-3:after{
   content: "";
   position: absolute;
-  width: 200px;
+  width: 35%;
   height: 3px;
   bottom: 0;
-  left: 32%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   background: #0ab8ce;
-  visibility: hidden;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: .25s linear;
-  color: #0ab8ce;
-  font-weight: 900;
-}
-.link-nuevos:hover:before,
-.link-nuevos:focus:before {
   visibility: visible;
   transform: scaleX(1);
+  color: #02fd9c;
+  font-weight: 900;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: 0.25s linear;
   color: #0ab8ce;
   font-weight: 900;
 }
+.qbusca-link-3:hover:after{
+  visibility: visible;
+  transform: scaleX(1);
+  color: #02fd9c;
+  font-weight: 900;
+}
+
+
 /*--link fidelizar--*/
 h3.qbusca-link-4{
   font-family: "font-one", sans-serif;
@@ -633,53 +661,29 @@ h3.qbusca-link-4:hover{
   color: #02fd9c;
   font-weight: 900;
 }
-.link-fidelizar{
-  text-decoration: none;
-  color: rgba(0,0,0,.4);
-  z-index: 1;
-}
-.link-fidelizar:hover{
-  color: #02fd9c;
-  text-decoration: none;
-  font-weight: 900;
-}
-.link-fidelizar:before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 3px;
-  bottom: 0;
-  left: 32%;
-  background: #02fd9c;
-  visibility: hidden;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: .25s linear;
-  color: #02fd9c;
-  font-weight: 900;
-}
-.link-fidelizar:hover:before,
-.link-fidelizar:focus:before {
-  visibility: visible;
-  transform: scaleX(1);
-  color: #02fd9c;
-  font-weight: 900;
-}
-/*pruebas--------------------------------------*/
+
+/*divs slide definitivos--------------------------------------*/
 #a1{
-  background-color: #000000;
+  background: #1f1f1f;
   position: absolute;
   z-index: 2;
+  right:0;
+  left:0;
 }
 
 #a2{
-  background-color: #ffffff;
+  background: #f0f0f0;
   position: relative;
   z-index: 100;
+  right:0;
+  left:0;
 }
 
 #a3{
+  background: #1f1f1f;
   position: relative;
+  z-index: 2;
+  display: none;
 }
 
 
@@ -702,6 +706,7 @@ h3.qbusca-link-4:hover{
     width: 150px;
     transition:all 0.7s linear;
 }
+
 
 /*------------------Estilos BLog Home----------------*/
 .box-blog{
