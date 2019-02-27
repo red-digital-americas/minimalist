@@ -1063,7 +1063,7 @@ ul.social-buttons li a:active {
 /* =Jumbotron Main
 -------------------------------------------------------------- */
 .jumbotron.jumbotron-main {
-	height: 100%;
+	height: 90%;
 	width: 100%;
 	font-family: "font-four", sans-serif;
 	color: #fff;

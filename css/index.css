@@ -227,6 +227,8 @@ border-radius: 2px;
 /* ------ Carousel--------*/
 #carrusel{
   z-index: 1;
+  width: 100%;
+  height: 21%;
   background: #0e0e0e !important;
   -webkit-box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
 -moz-box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
@@ -264,7 +266,7 @@ box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
 }
 
 .carousel-control.left{
-    padding-left: 10%;
+    margin-left: -5%;
 }
 .carousel-control.right{
     padding-right: 10%;
@@ -279,8 +281,15 @@ box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
 }
 
 .carousel-cert{
-  padding-top: 3%;
-  padding-bottom: 3%
+  left: 0;
+  right: 0;
+  padding-left: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.img-cert{
+  width: 70%;
 }
 /*---------------------- Servicios -----------------*/
 .box-service-impar{
