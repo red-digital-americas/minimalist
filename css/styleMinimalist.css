@@ -120,7 +120,7 @@
 }
 
 .text_two {
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'font-one';
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -174,12 +174,18 @@
 }
 
 .line_color {
+  color: #0ab8ce;
+}
+
+.line_color2 {
   color: #02fd9c;
 }
 
+
 .bodytext {
-  text-align: justify;
+  text-align: left;
   font-family: 'font-three';
+  line-height: 1.7em;
 }
 
 .bodytext1 {
@@ -332,5 +338,113 @@ figcaption {
   font-family: 'font-one';
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 10px 0px 0px 0px
+  margin: 10px 0px 0px 0px;
+}
+
+.met-sec{
+  padding: 5% 0px 7% 0px;
+}
+
+.titlemetd{
+  padding-top: 2%;
+  text-align:center;
+  letter-spacing: 15px;
+}
+
+.texttimet{
+  font-size: 27px;
+  letter-spacing: 5px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.texttimeti{
+  font-size: 16px;
+  letter-spacing: 5px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.p-met {
+    text-align: left;
+    line-height: 35px;
+    font-size: 14px;
+    padding: 7% 0 7% 0;
+    top: 50%;
+}
+
+.imgmet{
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.p-mettxt{
+  text-align: left;
+  letter-spacing: 1px;
+}
+.title-met{
+  padding-top: 10%;
+}
+
+.gradient-box {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 13.5em;
+  margin: auto;
+  max-width: 22em;
+  position: relative;
+  padding: 23% 2em;
+  box-sizing: border-box;
+  background: #1f1f1f;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 5px transparent;
+  /* !importanté */
+  border-radius: 50%;
+}
+.gradient-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(to right, #0ab8ce, #02fd9c);
+}
+
+.img-tec{
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-tec-row{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.line_dos{
+  border-color:  #0ab8ce;
+}
+
+.trans--grow{
+        -webkit-transition: all 2s ease-in-out; /* For Safari 3.1 to 6.0 */
+        transition: all 2s  ease-in-out;
+        width : 0;
+}
+
+.grow{
+    width:60%;
 }

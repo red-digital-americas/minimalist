@@ -292,6 +292,10 @@ box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
   width: 70%;
 }
 /*---------------------- Servicios -----------------*/
+#servicios{
+  padding-bottom: 8%;
+}
+
 .box-service-impar{
   text-decoration: none;
   color: inherit;

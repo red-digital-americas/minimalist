@@ -56,7 +56,8 @@
 	<link href="../css/seagul.css" rel="stylesheet">
 	<link href="../css/style-switcher.css" rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet" title="main-css">
-	<link rel="stylesheet" href="../css/styleMinimalist.css">
+	<link href="../css/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/styleMinimalist.css" rel="stylesheet">
 	<link href="../css/index.css" rel="stylesheet">
 
 
@@ -101,9 +102,17 @@ function myFunction() {
 							<li class="lisubmenu">data & mailing</li>
 						</ul>
 					</div>
-	        <li class="nav_tab">
+					<li class="nav_tab">
 						<a href="#clientes"><p>casos de éxito</p></a>
 					</li>
+					<div class="content">
+						<ul class="ulsubmenu">
+							<li class="lisubmenu"><a href="../casos_de_exito/taylor_made.html">taylor made</a></li>
+							<li class="lisubmenu"><a href="#">miele</a></li>
+							<li class="lisubmenu"><a href="#">royal canin</a></li>
+							<li class="lisubmenu"><a href="#">sodexo</a></li>
+						</ul>
+					</div>
 
 					<li class="nav_tab">
 						<a href="#"><p>about us</p></a>
@@ -161,6 +170,12 @@ function myFunction() {
 					}
 				</script>
 </div>
+<div class="float-xs-right">
+		<span class="translate-link">
+		 <a href="#" class="link-translate">esp</a> | <a href="#" class="link-translate">eng</a>
+		</span>
+		<!-- End Navigation -->
+</div>
 
 		</div>
 	</header>
@@ -180,11 +195,11 @@ function myFunction() {
 		<div class="container">
 			<div class="row spaces">
 				<div class="col-lg-6">
-					<p class="text_one"><strong>Servicios</strong></p>
-					<p class="text_two"><span class="line_color">_</span>desarrollo</p>
+					<p class="text_one leftReveal"><strong>Servicios</strong></p>
+					<p class="text_two leftReveal"  style="color:#ffffff;"><span class="line_color">_</span>desarrollo</p>
 				</div>
 				<div class="col-lg-6">
-					<img class="imagTwo" src="../images/svgAnimados/icon3.svg" alt="">
+					<img class="imagTwo scaleReveal" src="../images/svgAnimados/icon3.svg" alt="">
 				</div>
 			</div>
 			<div class="row spaces">
@@ -277,20 +292,22 @@ function myFunction() {
 	<!-- End Contact -->
 	</main>
 
+
 	<!-- Begin Footer -->
+
 	<footer id="footer" class="footer-padding">
 		<div class="container-footer">
 			<div class="row">
 				<div class="col-sm-6 col-lg-6">
 						<div class="footer-menu">
 							<ul class="footer-ul">
-								<li class="footer-menu"><a href="#" class="link-footer">servicios</a></li>
-								<li class="footer-menu"><a href="#" class="link-footer">casos de éxito</a></li>
-								<li class="footer-menu"><a href="#" class="link-footer">about us</a></li>
-								<li class="footer-menu"><a href="#" class="link-footer">equipo</a></li>
-								<li class="footer-menu"><a href="#" class="link-footer">certificaciones</a></li>
-								<li class="footer-menu"><a href="#" class="link-footer">blog</a></li>
-								<li class="footer-menu"><a href="#" class="link-footer">contacto</a></li>
+								<li class="footer-menu"><a href="../servicios.html" class="link-footer">servicios</a></li>
+								<li class="footer-menu"><a href="#clientes" class="link-footer">casos de éxito</a></li>
+								<li class="footer-menu"><a href="#about-us" class="link-footer">about us</a></li>
+								<li class="footer-menu"><a href="#equipo" class="link-footer">equipo</a></li>
+								<li class="footer-menu"><a href="#certificaciones" class="link-footer">certificaciones</a></li>
+								<li class="footer-menu"><a href="#blog" class="link-footer">blog</a></li>
+								<li class="footer-menu"><a href="contacto/contacto_minimalist.html" class="link-footer">contacto</a></li>
 							</ul>
 						</div>
 				</div>
@@ -298,18 +315,10 @@ function myFunction() {
 					<div class="row">
 						<img class="img-min-footer" src="../images/logo.png" alt="logo Minimalist">
 					</div>
-					<div class="row">
+					<div class="row text-right">
 						<div class="logos">
-					        <a class="logo-foot" href="#">
-											<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-												<path fill="#696969" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
-											</svg>
-					        </a>
-									<a class="logo-foot" href="#">
-										<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-											<path fill="#696969" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
-										</svg>
-									</a>
+							<a class="logo-foot" href="#"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+							<a class="logo-foot" href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
 							</div>
 					</div>
 				</div>
@@ -321,6 +330,9 @@ function myFunction() {
 	<!-- End Footer -->
 
 	<!-- Javascript Files -->
+
+
+
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
 

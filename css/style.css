@@ -68,7 +68,7 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 
-	color: #A2A2A2;
+	color: #696969;;
 	height: 100%;
 	min-height: 100% !important;
 	text-align: center;
@@ -235,8 +235,8 @@ button:hover,
 .no-padding-bottom { padding-bottom:0 !important; }
 
 .section-padding {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .section-padding-top {
