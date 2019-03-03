@@ -244,6 +244,7 @@
 /*END GRADIENTS*/
 /*BASE BUTTON*/
 .button {
+  font-weight: 600;
   position: relative;
   text-decoration: none;
   letter-spacing: 2px;
@@ -254,6 +255,7 @@
   border-image-slice: 1;
   padding: 10px 30px 10px 30px;
 }
+
 .button2 {
   position: relative;
   text-decoration: none;
@@ -356,6 +358,7 @@ figcaption {
   letter-spacing: 5px;
   line-height: 35px;
   color: #ffffff;
+  vertical-align: middle;
 }
 
 .texttimeti{
@@ -363,6 +366,7 @@ figcaption {
   letter-spacing: 5px;
   line-height: 35px;
   color: #ffffff;
+  vertical-align: middle;
 }
 
 .p-met {
@@ -380,11 +384,13 @@ figcaption {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
+  vertical-align: middle;
 }
 
 .p-mettxt{
   text-align: left;
   letter-spacing: 1px;
+  vertical-align: middle;
 }
 .title-met{
   padding-top: 10%;
@@ -447,4 +453,131 @@ figcaption {
 
 .grow{
     width:60%;
+}
+
+.textpbti{
+  font-size: 27px;
+  letter-spacing: 5px;
+  line-height: 35px;
+  color: #ffffff;
+  vertical-align: middle;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.p-pb{
+  text-align: left;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 10%;
+}
+
+.title-pb{
+  padding-top: 10%;
+  word-break: break-all;
+}
+
+.pbn{
+  padding: 1% 0 1% 0;
+}
+
+.line_color3{
+  text-decoration: none;
+background-color: none;
+background-image: linear-gradient(to right, #02fd9c,#0ab8ce);
+background: -webkit-linear-gradient(to right, #02fd9c,#0ab8ce);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 80px;
+font-weight: 600;
+}
+
+#client{
+  background: none;
+}
+.typ{
+  background: #1f1f1f; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1f1f1f 0%, #424242 24%, #8c8c8c 50%, #424242 79%, #1f1f1f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1f1f1f 0%,#424242 24%,#8c8c8c 50%,#424242 79%,#1f1f1f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1f1f1f 0%,#424242 24%,#8c8c8c 50%,#424242 79%,#1f1f1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#1f1f1f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient*/
+}
+
+.back{
+  padding-top: 20px;
+  width: 100%;
+}
+
+
+.ty-tit {
+  font-size: 70px;
+  font-family: 'font-one';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ty-text{
+  font-family: 'font-four';
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: lighter;
+
+}
+
+.ty-center{
+  padding-top: 15%;
+  height: 100%;
+  transform: translateY(-40%);
+}
+
+.lineFourT {
+  margin-left: 76%;
+  margin-top: -11px;
+  display: block;
+}
+.lineFourT {
+  animation-duration: 3s;
+  animation-name: slideinFour;
+}
+
+@keyframes slideinFour {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  0%, 100% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.botty{
+  transform: translateY(-100%);
+}
+
+.linety{
+  height: 2px;
+  width: 0;
+  margin-left: 47%;
+  margin-top: -2%;
+  margin-bottom: 2%;
+  background-color: #0ab8ce;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #0ab8ce, #02fd9c);
+  /* Standard syntax (must be last) */
 }

@@ -47,6 +47,10 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
+<!--W&B Section-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 	<!-- Stylesheets -->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/ionicons.min.css" rel="stylesheet">
@@ -56,21 +60,23 @@
 	<link href="../css/seagul.css" rel="stylesheet">
 	<link href="../css/style-switcher.css" rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet" title="main-css">
-	<link href="../css/font-awesome.min.css" rel="stylesheet">
 	<link href="../css/styleMinimalist.css" rel="stylesheet">
+	<link href="../css/font-awesome.min.css" rel="stylesheet">
 	<link href="../css/index.css" rel="stylesheet">
 
 
 </head>
-<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
+<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70" style="">
 	<div id="royal_preloader"></div>
 
 
 	<!-- Begin Header -->
+
+	<!-- Begin Progress Bar-->
 	<header>
 		<div class="progress-container">
-	<div class="progress-bar" id="myBar"></div>
-</div>
+			<div class="progress-bar" id="myBar"></div>
+		</div>
 <script>
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -82,6 +88,9 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 </script>
+	<!-- End Progress Bar-->
+
+	<!-- Begin MENU-->
 		<!-- Begin Navigation
 			<nav class="navbar navbar-default navbar-fixed-top">-->
 			<div class="row header-back">
@@ -96,13 +105,13 @@ function myFunction() {
 					</li>
 					<div class="content">
 						<ul class="ulsubmenu">
-							<li class="lisubmenu"><a href="../servicios/publicidad_digital.html">publicidad digital</a></li>
-							<li class="lisubmenu"><a href="../servicios/desarrollo.html">desarrollo</a></li>
-							<li class="lisubmenu">social media</li>
-							<li class="lisubmenu">data & mailing</li>
+							<li class="lisubmenu"><a href="#">publicidad digital</a></li>
+							<li class="lisubmenu"><a href="desarrollo.html">desarrollo</a></li>
+							<li class="lisubmenu"><a href="social_media.html">social media</a></li>
+							<li class="lisubmenu"><a href="data_mailing.html">data & mailing</a></li>
 						</ul>
 					</div>
-					<li class="nav_tab">
+	        <li class="nav_tab">
 						<a href="#clientes"><p>casos de éxito</p></a>
 					</li>
 					<div class="content">
@@ -171,16 +180,23 @@ function myFunction() {
 				</script>
 </div>
 <div class="float-xs-right">
-		<span class="translate-link">
-		 <a href="#" class="link-translate">esp</a> | <a href="#" class="link-translate">eng</a>
-		</span>
+					<span class="translate-link">
+							<a href="#" class="link-translate">esp</a> | <a href="#" class="link-translate">eng</a>
+					</span>
+<!-- End MENU-->
+
+<!-- /.container-fluid
+		</nav>-->
 		<!-- End Navigation -->
-</div>
-
 		</div>
-	</header>
+		</div>
 
-	<main>
+	</header>
+	<!-- End Header -->
+
+<!-- Seccion Servicios -->
+
+	<main id="top">
 		<div class="row spaces1">
 			<div class="col-lg-6">
 				<img class="lineOne" src="../images/lineOne.png" alt="">
@@ -194,27 +210,159 @@ function myFunction() {
 
 		<div class="container">
 			<div class="row spaces">
-				<div class="col-lg-6">
+				<div class="col-lg-8">
 					<p class="text_one leftReveal"><strong>Servicios</strong></p>
-					<p class="text_two leftReveal"  style="color:#ffffff;"><span class="line_color2">_</span>Publicidad Digital</p>
+					<p class="text_three leftReveal" style="color:#ffffff;"><span class="line_color2">_</span>performance marketing</p>
 				</div>
-				<div class="col-lg-6">
-					<img class="imagTwo scaleReveal" src="../images/svgAnimados/icon1.svg" alt="">
+				<div class="col-lg-4">
+					<img class="imagTwo" src="../images/svgAnimados/icon1.svg" alt="">
 				</div>
 			</div>
 			<div class="row spaces">
 				<div class="col-lg-12">
 					<p class="bodytext">
-						<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoree.</span>
+						<span>¿Necesitas más conversiones, leads y ventas online? Implementamos campañas rentables y medibles que te ayuden a maximizar el ROI de tu inversión publicitaria.
+						</span>
 					</p>
 				</div>
 			</div>
 			<div class="row spaces">
 				<div class="col-lg-12">
-					<a class="boton-one" href="../contacto/contacto_fidelizar_clientes.html"><span class="textBotonOne">_Contáctanos</span></a>
+					<a class="boton-one" href="../contacto/contacto_nuevos_clientes.html"><span class="textBotonOne">_Contáctanos</span></a>
 				</div>
 			</div>
 		</div>
+<!-- End Seccion Servicios -->
+
+<!-- Metodología -->
+	 <div>
+		<div class="container">
+		<div class="row" style="padding-bottom:3%;">
+			<div class="col-12 preg-negro align-self-center text-center">
+				<h2 class="text_two titlemetd scaleReveal">metodología <strong>_minimalist</strong></h2>
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center align-self-center text-center met-sec">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+				<div class="row justify-content-md-center p-met">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 title-pb">
+						<p class="text_one textpbti leftReveal" style="font-size:18px;"><strong><span class="line_color2">_</span>certificaciones</strong></p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="gradient-box">
+							<img class="imgmet" src="../images/svgAnimados/icon3color2.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+					<p class="p-pb">Estamos avalados por Google como agencia Premier Partner (y parte del top 3 en México). También estamos certificados en Facebook BluePrint (Buying & Planning) y en Google Analytics.</p>
+
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center align-self-center text-center met-sec">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+					<p class="p-pb">Te ayudamos a aparecer en el momento preciso en que un usuario busca tu producto o servicio. Llégale a tu cliente potencial cuando está con la mentalidad de “quiero comprar” / “quiero cotizar”. Complementamos nuestras estrategias en Google Search con segmentaciones precisas de audiencias en Google Display, YouTube y Universal App Campaigns.</p>
+
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+				<div class="row justify-content-md-center p-met">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="gradient-box">
+							<img class="imgmet" src="../images/svgAnimados/icon3color2.svg" alt="">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 title-pb">
+						<p class="text_one textpbti rightReveal"><strong><span class="line_color2">_</span>google ads (search, display, youtube y más)</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center align-self-center text-center met-sec">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+				<div class="row justify-content-md-center p-met">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 title-pb">
+						<p class="text_one textpbti leftReveal"><strong><span class="line_color2">_</span>facebook ads & instagram ads</strong></p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="gradient-box">
+							<img class="imgmet" src="../images/svgAnimados/icon3color2.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+					<p class="p-pb">Creamos campañas para llegarle a tu target ideal. Usamos indicadores demográficos, de intereses, ubicación, empleo, rango socioeconómico y más para asegurarnos que solo te vea alguien que pueda ser un usuario potencial. De la mano de nuestro equipo de diseño, creamos ads impactantes en diferentes formatos para transmitirles el valor de tu empresa.</p>
+
+			</div>
+		</div>
+
+	</div> <!--container-->
+	</div>
+<!-- End Metodología -->
+
+
+	<div class="container">
+	<div class="row pbn">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+			<p class="text_one leftReveal"><strong>nuestros certificados</strong></p>
+		</div>
+	</div>
+	</div>
+
+	<!-- Begin Carousel -->
+	<section id="carrusel">
+	<div class="row carousel-cert">
+			<div class="carousel slide multi-item-carousel" id="theCarousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="col-xs-4"><img src="../images/certificados/cert1.jpg" class="img-responsive img-cert"></div>
+					</div>
+					<div class="item">
+						<div class="col-xs-4"><img src="../images/certificados/cert2.jpg" class="img-responsive img-cert"></div>
+					</div>
+					<div class="item">
+						<div class="col-xs-4"><img src="../images/certificados/cert3.jpg" class="img-responsive img-cert"></div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="ion-ios-arrow-left"></i></a>
+				<a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="ion-ios-arrow-right"></i></a>
+			</div>
+
+	</div><!-- /.carousel -->
+	<!-- script-carousel -->
+	<script src='https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+	<script >// Instantiate the Bootstrap carousel
+	// for every slide in carousel, copy the next slide's item in the slide.
+	// Do the same for the next, next item.
+	$('.multi-item-carousel .item').each(function () {
+	var next = $(this).next();
+	if (!next.length) {
+		next = $(this).siblings(':first');
+	}
+	next.children(':first-child').clone().appendTo($(this));
+
+	if (next.next().length > 0) {
+		next.next().children(':first-child').clone().appendTo($(this));
+	} else {
+		$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+	}
+	});
+	//# sourceURL=pen.js
+	</script>
+	</section><!-- /.section -->
+		<!-- End Quote Carousel -->
+
+
+<div class="">
 
 		<!--- Casos de éxito primera parte --->
 		<div class="row spaces">
@@ -290,70 +438,72 @@ function myFunction() {
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	<!-- End Contact -->
+
+	</div>
 	</main>
 
 
-	<!-- Begin Footer -->
 
-	<footer id="footer" class="footer-padding">
-		<div class="container-footer">
-			<div class="row">
-				<div class="col-sm-6 col-lg-6">
-						<div class="footer-menu">
-							<ul class="footer-ul">
-								<li class="footer-menu"><a href="../servicios.html" class="link-footer">servicios</a></li>
-								<li class="footer-menu"><a href="#clientes" class="link-footer">casos de éxito</a></li>
-								<li class="footer-menu"><a href="#about-us" class="link-footer">about us</a></li>
-								<li class="footer-menu"><a href="#equipo" class="link-footer">equipo</a></li>
-								<li class="footer-menu"><a href="#certificaciones" class="link-footer">certificaciones</a></li>
-								<li class="footer-menu"><a href="#blog" class="link-footer">blog</a></li>
-								<li class="footer-menu"><a href="contacto/contacto_minimalist.html" class="link-footer">contacto</a></li>
-							</ul>
-						</div>
-				</div>
-				<div class="col-sm-6 col-lg-6 text-right">
-					<div class="row">
-						<img class="img-min-footer" src="../images/logo.png" alt="logo Minimalist">
-					</div>
-					<div class="row text-right">
-						<div class="logos">
-							<a class="logo-foot" href="#"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-							<a class="logo-foot" href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+		<!-- Begin Footer -->
+
+		<footer id="footer" class="footer-padding">
+			<div class="container-footer">
+				<div class="row">
+					<div class="col-sm-6 col-lg-6">
+							<div class="footer-menu">
+								<ul class="footer-ul">
+									<li class="footer-menu"><a href="#top" class="link-footer">servicios</a></li>
+									<li class="footer-menu"><a href="../clientes.html" class="link-footer">casos de éxito</a></li>
+									<li class="footer-menu"><a href="#about-us" class="link-footer">about us</a></li>
+									<li class="footer-menu"><a href="#equipo" class="link-footer">equipo</a></li>
+									<li class="footer-menu"><a href="#certificaciones" class="link-footer">certificaciones</a></li>
+									<li class="footer-menu"><a href="#blog" class="link-footer">blog</a></li>
+									<li class="footer-menu"><a href="../contacto/contacto_minimalist.html" class="link-footer">contacto</a></li>
+								</ul>
 							</div>
 					</div>
+					<div class="col-sm-6 col-lg-6 text-right">
+						<div class="row">
+							<img class="img-min-footer" src="../images/logo.png" alt="logo Minimalist">
+						</div>
+						<div class="row text-right">
+							<div class="logos">
+								<a class="logo-foot" href="#"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+								<a class="logo-foot" href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+								</div>
+						</div>
+					</div>
 				</div>
-			</div>
 
-		</div><!-- /.container -->
-	</footer><!-- /.footer -->
+			</div><!-- /.container -->
+		</footer><!-- /.footer -->
 
-	<!-- End Footer -->
+		<!-- End Footer -->
 
-	<!-- Javascript Files -->
-
+		<!-- Javascript Files -->
 
 
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
 
-	<script type="text/javascript" src="../js/particles.min.js"></script>
-	<script type="text/javascript" src="../js/particlesRun.js"></script>
-	<script type="text/javascript" src="../js/jquery.mixitup.js"></script>
-	<script type="text/javascript" src="../js/form-validator.min.js"></script>
-	<script type="text/javascript" src="../js/jquery.inview.min.js"></script>
-	<script type="text/javascript" src="../js/jquery.countTo.js"></script>
-	<script type="text/javascript">
-		/* ---- Counter (our count) ---- */
-		$('#ourcount').one('inview', function(event, isInView) {
-			if (isInView) {
-				$('.timer').countTo({speed: 3000});
-			}
-		});
-	</script>
-	<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="../js/scrollreveal.min.js"></script>
+
+		<script type="text/javascript" src="../js/jquery.mixitup.js"></script>
+		<script type="text/javascript" src="../js/form-validator.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.inview.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.countTo.js"></script>
+		<script type="text/javascript">
+			/* ---- Counter (our count) ---- */
+			$('#ourcount').one('inview', function(event, isInView) {
+				if (isInView) {
+					$('.timer').countTo({speed: 3000});
+				}
+			});
+		</script>
+		<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="../js/scrollreveal.min.js"></script>
 
 
-	<script type="text/javascript" src="../js/main.js"></script>
-</body>
-</html>
+		<script type="text/javascript" src="../js/main.js"></script>
+	</body>
+	</html>
