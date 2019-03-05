@@ -1,3 +1,65 @@
+/* animacion lineas clem */
+
+#my-svg-path{
+	-webkit-animation: frosting-opacity 2s; /* Safari 4+ */
+}
+
+@-webkit-keyframes frosting-opacity {
+  0%   {
+  	opacity: 0;
+  	transform: translateX(-600px);
+  }
+  50% {
+  	opacity: 1;
+  	transform: translateX(0);
+  }
+}
+
+#my-svg-path1{
+	-webkit-animation: frosting-opacity1 2s; /* Safari 4+ */
+}
+
+@-webkit-keyframes frosting-opacity1 {
+  0%   {
+  	opacity: 0;
+  	transform: translateX(-600px);
+  }
+  50% {
+  	opacity: 1;
+  	transform: translateX(-200px);
+  }
+}
+#my-svg-path2{
+	-webkit-animation: frosting-opacity2 2s; /* Safari 4+ */
+}
+
+@-webkit-keyframes frosting-opacity2 {
+  0%   {
+  	opacity: 0;
+  	transform: translateX(2000px);
+  }
+  50% {
+  	opacity: 1;
+  	transform: translateX(1000px);
+  }
+}
+#my-svg-path3{
+	-webkit-animation: frosting-opacity3 3s; /* Safari 4+ */
+}
+
+@-webkit-keyframes frosting-opacity3 {
+  0%   {
+  	opacity: 0;
+  	transform: translateX(-600px);
+  }
+  50% {
+  	opacity: 1;
+  	transform: translateX(0);
+  }
+}
+
+
+
 /* animation LineOne */
 .lineOne{
   animation-duration: 2s;
@@ -88,6 +150,43 @@
 
 .spaces3 {
   padding: 50px 0px 50px 0px;
+}
+
+.line-h{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.line-1-h{
+  position: absolute;
+  display: inline-flex;
+  margin-top: -0.4%;
+  margin-left: -49.97%;
+  padding-bottom: 5%;
+}
+.line-2-h{
+  position: absolute;
+  display: inline-flex;
+  margin-left: -49.97%;
+  padding-top: 3%;
+}
+.line-3-h{
+  position: absolute;
+  display: inline-flex;
+  margin-left: 34.8%;
+  float: right;
+}
+.line-3-t{
+  position: absolute;
+  display: inline-flex;
+  margin-left: 34.8%;
+  float: right;
+}
+.line-3-p{
+  position: absolute;
+  display: inline-flex;
+  margin-left: 46.3%;
+  float: right;
 }
 
 .casos {
@@ -508,10 +607,25 @@ font-weight: 600;
   background: linear-gradient(135deg, #1f1f1f 0%,#424242 24%,#8c8c8c 50%,#424242 79%,#1f1f1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#1f1f1f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient*/
 }
-
+.typ1{
+  background: #1a1a1a; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1f1f1f 0%, #424242 24%, #8c8c8c 50%, #424242 79%, #1f1f1f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1f1f1f 0%,#424242 24%,#8c8c8c 50%,#424242 79%,#1f1f1f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1f1f1f 0%,#424242 24%,#8c8c8c 50%,#424242 79%,#1f1f1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#1f1f1f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient*/
+}
+.typ2{
+  background: #1f1f1f; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1f1f1f 0%, #424242 24%, #8c8c8c 50%, #424242 79%, #1f1f1f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1f1f1f 0%,#424242 24%,#8c8c8c 50%,#424242 79%,#1f1f1f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1f1f1f 0%,#424242 24%,#8c8c8c 50%,#424242 79%,#1f1f1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#1f1f1f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient*/
+}
 .back{
   padding-top: 20px;
   width: 100%;
+  z-index: 99999999;
+  position: relative;
 }
 
 
@@ -534,9 +648,15 @@ font-weight: 600;
 }
 
 .ty-center{
-  padding-top: 15%;
-  height: 100%;
-  transform: translateY(-40%);
+  padding-top: 10%;
+  height: auto;
+  width: 100%;
+  /* transform: translateY(50%); */
+  /* background: transparent; */
+  background-color: transparent;
+  position: relative;
+  padding-bottom: 15%;
+}
 }
 
 .lineFourT {
@@ -580,4 +700,27 @@ font-weight: 600;
   /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, #0ab8ce, #02fd9c);
   /* Standard syntax (must be last) */
+}
+
+.line3{
+  transform: translateX(+70.8%);
+  position: absolute;
+  margin-left: 2.88%;
+}
+.lines1{
+  position: absolute;
+  transform: translateY(-300%);
+}
+.lines2{
+  position: absolute;
+  transform: translateY(-200%);
+}
+.circle1{
+  position: relative;
+z-index: 1;
+/* display: flex; */
+margin-left: 15%;
+margin-top: -25%;
+transform: translateY(62%);
+width: 27%;
 }

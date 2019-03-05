@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 563.21 568.18" style=""><defs>
+	  <style>.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.41px;}.cls-1{stroke:url(#Degradado_sin_nombre_18);}.cls-2{stroke:url(#Degradado_sin_nombre_18-2);}</style>
+	  <linearGradient id="Degradado_sin_nombre_18" y1="284.09" x2="545.3" y2="284.09" gradientUnits="userSpaceOnUse"><stop offset="0.01" stop-color="#0ab8ce"></stop><stop offset="1" stop-color="#02fd9c"></stop></linearGradient>
+		<linearGradient id="Degradado_sin_nombre_18-2" x1="-4506.2" y1="-1936.21" x2="-4479.87" y2="-1936.21" gradientTransform="matrix(-0.76, -0.65, -0.65, 0.76, -4129.3, -1244.65)" xlink:href="#Degradado_sin_nombre_18"></linearGradient></defs>
+	  <g id="Capa_2" data-name="Capa 2">
+	    <g id="Capa_1-2" data-name="Capa 1">
+	      <path class="cls-1 lWqRWJYl_0" d="M465.83,501.53a282.19,282.19,0,0,1-181.74,66C127.58,567.48.71,440.6.71,284.09S127.58.71,284.09.71C401,.71,501.33,71.47,544.66,172.49"></path>
+	      <path class="cls-2 lWqRWJYl_1" d="M537.5899999999999,183.62A12.46,12.46 0,1,1 562.51,183.62A12.46,12.46 0,1,1 537.5899999999999,183.62"></path>
+	    </g>
+	  </g>
+	  <style data-made-with="vivus-instant">.lWqRWJYl_0{stroke-dasharray:1419 1421;stroke-dashoffset:1420;animation:lWqRWJYl_draw 1950ms ease-in-out 0ms forwards;}.lWqRWJYl_1{stroke-dasharray:79 81;stroke-dashoffset:80;animation:lWqRWJYl_draw 1950ms ease-in-out 1.33s forwards;}@keyframes lWqRWJYl_draw{100%{stroke-dashoffset:0;}}@keyframes lWqRWJYl_fade{0%{stroke-opacity:1;}93.4959349593496%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+	</svg>
