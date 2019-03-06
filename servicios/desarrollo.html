@@ -152,6 +152,11 @@ function myFunction() {
 								$('#navigator').animate({left: '0px'}, 350);
 								$('.menu-icon').animate({left: '300px'}, 350);
 								$('.menu-text').animate({left: '350px'}, 350).empty().text("Close");
+								var xmobile = window.matchMedia("(max-width: 600px)")
+								if (xmobile.matches){
+										$('.menu-icon').animate({left: '0px',position:'relative'}, 350);
+                    $('#navigator').animate({left: '0px'}, 350);
+                  }
 						}
 						else  {
 								$('#navigator').animate({left: '-300px'}, 350);
@@ -337,30 +342,30 @@ function myFunction() {
 		</div>
 	</div>
 	<div class="row  img-tec-row">
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/dotnet.png" alt="microsoft dot net">
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/angular.png" alt="angular">
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/swift.png" alt="swift">
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/android.png" alt="android">
 		</div>
 	</div>
 	<div class="row  img-tec-row">
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/dotnet.png" alt="microsoft dot net">
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/angular.png" alt="angular">
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/swift.png" alt="swift">
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
 			<img class="img-tec bottomReveal" src="../images/logos/android.png" alt="android">
 		</div>
 	<script>

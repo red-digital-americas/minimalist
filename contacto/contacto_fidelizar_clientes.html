@@ -143,6 +143,11 @@ function myFunction() {
 								$('#navigator').animate({left: '0px'}, 350);
 								$('.menu-icon').animate({left: '300px'}, 350);
 								$('.menu-text').animate({left: '350px'}, 350).empty().text("Close");
+								var xmobile = window.matchMedia("(max-width: 600px)")
+								if (xmobile.matches){
+										$('.menu-icon').animate({left: '0px',position:'relative'}, 350);
+                    $('#navigator').animate({left: '0px'}, 350);
+                  }
 						}
 						else  {
 								$('#navigator').animate({left: '-300px'}, 350);

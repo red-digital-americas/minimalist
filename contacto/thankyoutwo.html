@@ -115,6 +115,11 @@ function myFunction() {
 							window.onload = function() {
 							$(".linety").animate({width : "30%"}, 2000)};
 						</script>
+						<script>
+						var xmobile = window.matchMedia("(max-width: 600px)")
+						if (xmobile.matches){
+							$(".linety").animate({width : "80%"}, 2000)};
+						</script>
 						<p class="ty-text">
 							En breve nos pondremos en contacto contigo
 						</p>

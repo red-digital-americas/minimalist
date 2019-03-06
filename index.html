@@ -47,6 +47,8 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
+
+
 <!--W&B Section-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -95,7 +97,7 @@ function myFunction() {
 		<!-- Begin Navigation
 			<nav class="navbar navbar-default navbar-fixed-top">-->
 			<div class="row header-back">
-				<div class="col-lg-12">
+				<div class="col-sm-10 col-lg-12">
 				<div id="navigator">
 				<ul id="nav">
 					<li class="nav_tab">
@@ -153,6 +155,11 @@ function myFunction() {
 								$('#navigator').animate({left: '0px'}, 350);
 								$('.menu-icon').animate({left: '300px'}, 350);
 								$('.menu-text').animate({left: '350px'}, 350).empty().text("Close");
+								var xmobile = window.matchMedia("(max-width: 600px)")
+								if (xmobile.matches){
+										$('.menu-icon').animate({left: '0px',position:'relative'}, 350);
+                    $('#navigator').animate({left: '0px'}, 350);
+                  }
 						}
 						else  {
 								$('#navigator').animate({left: '-300px'}, 350);
@@ -270,7 +277,7 @@ $('.multi-item-carousel .item').each(function () {
 
 	<section id="servicios" class="background2 section-padding">
 		<div class="container">
-				<a href="servicios.html">
+
 			<div class="row">
 				<div class="col-xs-12 section-title text-center">
 					<h2 class="scaleReveal">servicios</h2>
@@ -280,7 +287,7 @@ $('.multi-item-carousel .item').each(function () {
 			</div><!-- /.row -->
 
 			<div class="row">
-				</a>
+
 				<!-- Item 1 -->
 
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -397,7 +404,7 @@ $('.multi-item-carousel .item').each(function () {
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
 				<img class="img-wh" src="images/svgAnimados/icon8.svg" alt="data & crm">
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left; line-height: 20px; font-size: 14px; padding: 7% 10% 7% 0px;">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 desasty">
 			<h3 class="title-negro">data & crm</h3>
 			<p>
 				Aprovechamos y analizamos las bases de datos generadas con una meta en la mente: Crear estrategias de Email marketing, robustas y creativas para incrementar el lifetime value de tu cliente.
@@ -459,7 +466,7 @@ $('.multi-item-carousel .item').each(function () {
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-blanco">
 				<img class="img-wh" src="images/svgAnimados/icon5.svg" alt="desarrollo">
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left; line-height: 20px; font-size: 14px; padding: 7% 10% 7% 0px;">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 desasty">
 			<h3 class="title-blanco">desarrollo</h3>
 			<p>
 				Transformamos los objetivos de tu empresa en aplicaciones o plataformas web con las mejores prácticas de usabilidad y performance (UX / UI) para optimizar tus resultados.
