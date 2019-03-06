@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto Fidelizar Clientes</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://minimalist.demo-minimalist.com/images/favicon.ico"/>
+    <style>
+    div {
+        -webkit-user-select: none; /* Safari 3.1+ */
+        -moz-user-select: none; /* Firefox 2+ */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none; /* Standard syntax */
+        padding: 20px;
+        text-align: justify;
+        margin: 5%;
+        box-sizing: border-box;
+        background: white;
+        }
+    body{
+        background: black;
+        font-family: sans-serif;
+        font-size: 14px;
+        width: 700px;
+        height: auto;
+    }
+    .img2{
+        width: 40%;
+        padding: 0;
+        margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Formulario Fidelizar Clientes</h2>
+        <h3>Has recbido un mensaje de:</h3>
+        Nombre: {{from_name}}<br>
+        Correo: <a href="mailto: {{from_email}}?subject=Somos%20Minimalist&amp;body=Hola!%0A%0AQueremos%20contactarte%20porque%20nos%20dejaste%20tus%20datos%20en%20nuestra%20p%C3%A1gina%20web.">{{from_email}}</a><br>
+        <br>
+        El mensaje que recibiste es el siguiente:
+        <p>{{mensaje}}</p>
+
+        <div class="img2">
+          <img src="http://minimalist.demo-minimalist.com/images/min2.gif" alt="">
+        </div>
+    </div>
+</body>
+</html>

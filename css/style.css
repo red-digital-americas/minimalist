@@ -144,7 +144,7 @@ button:hover,
 	-moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important;
 
-    border-color: #65C6BB;
+
 
 }
 
@@ -1072,6 +1072,9 @@ ul.social-buttons li a:active {
 	position: relative;
 	margin:0;
 }
+.jumbotron p {
+  font-size: 17px;
+}
 
 #particles-js {
 	position: absolute;
@@ -1122,11 +1125,11 @@ ul.social-buttons li a:active {
 .scroll-indicator {
 	padding-top:6px;
     display: inline-block;
-    width: 50px;
+    width: 100px;
 }
 
 .arrow-scroll-indicator {
-	font-size: 10px;
+	font-size: 20px;
 	color: rgba(255, 255, 255, 0.60);
 }
 

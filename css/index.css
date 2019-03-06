@@ -590,6 +590,41 @@ h3.qbusca-link-2:hover{
   color: #02fd9c;
   font-weight: 900;
 }
+
+.imgqw1{
+  width: 50%;
+  right: 0;
+  transform: translateX(-3%);
+  margin-bottom: -7%;
+}
+.imgqw2{
+  width: 80%;
+  right: 0;
+  /* transform: translateX(-20%); */
+  margin-top: -9.9%;
+  margin-bottom: -10%;
+  margin-left: -30%;
+}
+.imgqw3{
+  width: 80%;
+  right: 0;
+  /*transform: translateX(20%);*/
+  margin-top: -9%;
+  margin-bottom: -9%;
+  margin-left: 27%;
+}
+.imgqw4 {
+    width: 4%;
+    right: 0;
+    /* transform: translateX(20%); */
+    margin-top: -9%;
+    margin-bottom: -14.2%;
+    margin-left: 50%;
+    /* padding-bottom: 1%; */
+}
+
+
+
 /*--------------------------------------------NEGRO*/
 #fidelizar-clientes{
   height: auto;
@@ -690,6 +725,38 @@ h3.qbusca-link-4:hover{
   font-weight: 900;
 }
 
+.imgqb1{
+  width: 1.3%;
+  right: 0;
+  margin-bottom: -4%;
+  margin-left: 49.2%;
+}
+.imgqb2{
+  width: 80%;
+  right: 0;
+  /* transform: translateX(-20%); */
+  margin-top: -7.6%;
+  margin-bottom: -10%;
+  margin-left: -30%;
+}
+.imgqb3{
+  width: 80%;
+  right: 0;
+  /*transform: translateX(20%);*/
+  margin-top: -9%;
+  margin-bottom: -9%;
+  margin-left: 27%;
+}
+.imgqb4{
+  width: 4%;
+  right: 0;
+  margin-top: -5%;
+  margin-bottom: -10%;
+  padding-bottom: 10%;
+  margin-left: 50%;
+}
+
+
 /*divs slide definitivos--------------------------------------*/
 #a1{
   background: #1f1f1f;
@@ -705,7 +772,7 @@ h3.qbusca-link-4:hover{
   z-index: 100;
   right:0;
   left:0;
-  padding-bottom: 3%;
+  padding-bottom: 6%;
 }
 
 #a3{
@@ -911,7 +978,59 @@ button:hover,
 #contact .form-control:focus,
 #contact .form-control:hover,
 #contact .form-control:active {
-    border-color: #65C6BB;
+
+}
+
+/*botones formulario*/
+
+.btn.btn-success.focus,
+.btn.btn-success:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn.btn-success:hover {
+  outline: none;
+  box-shadow: none;
+}
+.btn.btn-success.active,
+.btn.btn-success:active {
+  outline: none;
+}
+.btn.btn-success.active.focus,
+.btn.btn-success.active:focus,
+.btn.btn-success.active:hover,
+.btn.btn-success:active.focus,
+.btn.btn-success:active:focus,
+.btn.btn-success:active:hover {
+  outline: none;
+  box-shadow: none;
+}
+/*---*/
+.button:hover, .button:active, .button:focus{
+  outline: none;
+  box-shadow: none;
+}
+.button.button-success.focus,
+.button.button-success:focus {
+  outline: none;
+  box-shadow: none;
+}
+.button.button-success:hover {
+  outline: none;
+  box-shadow: none;
+}
+.button.button-success.active,
+.button.button-success:active {
+  outline: none;
+}
+.button.button-success.active.focus,
+.button.button-success.active:focus,
+.button.button-success.active:hover,
+.button.button-success:active.focus,
+.button.button-success:active:focus,
+.button.button-success:active:hover {
+  outline: none;
+  box-shadow: none;
 }
 
 #contact .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
@@ -923,7 +1042,7 @@ button:hover,
 }
 
 #royal_preloader.royal_preloader_number .royal_preloader_percentage:after {
-    border-left-color: #65C6BB;
+    border-left-color: #0ab8ce;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {

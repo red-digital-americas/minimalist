@@ -399,12 +399,12 @@ function myFunction() {
 		<div class="container">
 			<div class="row spaces">
 				<div class="col-sm-8 col-sm-offset-2 mt30-xs">
-					<form data-toggle="validator" id="contactForm" name="contactForm">
+					<form id="contacto" method="post">
 						<div class="row mb10">
 							<div class="col-sm-6">
 								<div class="form-group">
 									<div class="controls">
-										<input class="form-control" data-error="Campo requerido." id="name" placeholder="Nombre *" required="" type="text">
+										<input class="form-control" data-error="Campo requerido." id="name" placeholder="Nombre *" required="" type="text" name="from_name">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -412,7 +412,7 @@ function myFunction() {
 							<div class="col-sm-6">
 								<div class="form-group">
 									<div class="controls">
-										<input class="email form-control" data-error="Campo requerido." id="email" placeholder="Email *" required="" type="email">
+										<input class="email form-control" data-error="Campo requerido." id="email" placeholder="Email *" required="" type="email" name="from_email">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -422,7 +422,7 @@ function myFunction() {
 							<div class="col-sm-12">
 								<div class="form-group">
 									<div class="controls">
-										<textarea class="form-control" data-error="Campo requerido." id="message" placeholder="Mensaje *" required="" rows="10"></textarea>
+										<textarea class="form-control" data-error="Campo requerido." id="message" placeholder="Mensaje *" required="" rows="10" name="mensaje"></textarea>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -433,10 +433,41 @@ function myFunction() {
 								<div id="msgSubmit" class="h4 hidden mt10 no-margin-bottom"></div>
 							</div><!-- /.column -->
 							<div class="col-sm-6 text-right">
-								<a href="#"class="button b-green">_Enviar</a>
+								<button class="button b-green">_enviar</button>
 							</div><!-- /.column -->
 						</div><!-- /.row -->
 					</form><!-- /.form -->
+
+					<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+					<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+					<script type="text/javascript">
+						(function(){
+							emailjs.init("user_WlZjUFUM8g7q7pcKgBGgn");
+						})();
+					</script>
+				<script type="text/javascript">
+					var myform = $("form#contacto");
+					myform.submit(function(event){
+						event.preventDefault();
+
+						// Change to your service ID, or keep using the default service
+						var service_id = "default_service";
+						var template_id = "contacto";
+
+						myform.find("button").text("Enviando...");
+						emailjs.sendForm(service_id,template_id,myform[0])
+							.then(function(){
+								 myform.find("button").text("Enviado");
+								 window.open("thankyouone.html","_self")
+							}, function(err) {
+								 alert("Envio fallido!\r\n Response:\n " + JSON.stringify(err));
+								 myform.find("button").text("Enviado");
+							});
+						return false;
+					});
+				</script>
+
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
@@ -471,8 +502,8 @@ function myFunction() {
 						</div>
 						<div class="row text-right">
 							<div class="logos">
-								<a class="logo-foot" href="#"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-								<a class="logo-foot" href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+								<a class="logo-foot" href="https://www.facebook.com/MinimalistAgency/"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+								<a class="logo-foot" href="https://www.instagram.com/minimalistmx/"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
 								</div>
 						</div>
 					</div>
