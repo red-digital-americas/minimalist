@@ -3887,7 +3887,7 @@ fieldset[disabled] .btn-primary:hover {
 .open>.dropdown-toggle.btn-success:focus,
 .open>.dropdown-toggle.btn-success:hover {
     color: #fff;
-    
+
     border-color: #255625
 }
 
@@ -8039,3 +8039,12 @@ button.close {
 
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+@media only screen and (max-width: 600px){
+.col-xs-4 {
+  width: 100% !important;
+}
+.img-cert {
+    width: 90% !important;
+}
+}

@@ -228,7 +228,7 @@ border-radius: 2px;
 #carrusel{
   z-index: 1;
   width: 100%;
-  height: 21%;
+  height: auto !important;
   background: #0e0e0e !important;
   -webkit-box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
 -moz-box-shadow: -11px 20px 65px -6px rgba(0,0,0,1);
@@ -1276,6 +1276,10 @@ span.portfolio-hover {
   padding: 7% 10% 7% 0px;
 }
 /*------------------------------------Mobile Adicionales*/
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  #carrusel {
+      height: auto !important;
+  }
 
 @media only screen and (max-width: 600px){
 #navigator {
@@ -1292,13 +1296,13 @@ span.portfolio-hover {
   width: 250px;
 }
 #carrusel {
-    height: auto;
+    height: auto !important;
 }
 .col-xs-4 {
-  width: 100%;
+  width: 100% !important;
 }
 .img-cert {
-    width: 90%;
+    width: 90% !important;
 }
 .header-back{
   width: 100%;
@@ -1402,24 +1406,9 @@ span.portfolio-hover {
     height: 70%;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #carrusel {
+      height: auto !important;
+  }
 
 
 

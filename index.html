@@ -253,6 +253,8 @@ function myFunction() {
 <script >// Instantiate the Bootstrap carousel
 // for every slide in carousel, copy the next slide's item in the slide.
 // Do the same for the next, next item.
+var xmobile = window.matchMedia("(min-width: 600px)")
+if (xmobile.matches){
 $('.multi-item-carousel .item').each(function () {
   var next = $(this).next();
   if (!next.length) {
@@ -265,7 +267,7 @@ $('.multi-item-carousel .item').each(function () {
   } else {
     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
-});
+})};
 //# sourceURL=pen.js
 </script>
 	</section><!-- /.section -->
