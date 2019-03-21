@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 section{
   margin-right: none;
   background: #0e0e0e; /* Old browsers */
